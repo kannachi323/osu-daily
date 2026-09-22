@@ -1,0 +1,16 @@
+# .NET / MAUI
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+TestResults/
+
+# Local tools, credentials, and OS files
+.tools/
+.env
+.env.*
+!.env.example
+*.p12
+*.mobileprovision
+.DS_Store
