@@ -10,7 +10,7 @@ mobile platform.
 
 ## Structure
 
-This follows Moku-iOS's feature-first layout. Views and view models will live
+The project uses a feature-first layout. Views and view models will live
 beside each other in their feature folder, not in global MVVM directories.
 
 ```text
@@ -23,7 +23,7 @@ OsuDaily/
       Data/                  Fixture loading and Trivia-specific data mapping
   Shared/
     Components/              UI pieces actually shared between screens
-    Theme/                   Moku-inspired colors, typography, and spacing
+    Theme/                   App colors, typography, and spacing
     Storage/                 Local persistence
   Resources/
     Raw/                     Bundled, versioned fixture data

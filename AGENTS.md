@@ -1,5 +1,7 @@
 # Project conventions
 
+- Keep README.md focused on this project. Never name or reference other apps
+  used as internal design or architecture inspiration in the README.
 - Follow the feature-first Moku-iOS hierarchy documented in README.md.
 - Use C# / .NET MAUI with MVVM. Place each view beside its view model under
   `OsuDaily/Features/<Feature>/`.
