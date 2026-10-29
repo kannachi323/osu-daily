@@ -1,97 +1,119 @@
-# notsu
+# osu! daily
 
-An unofficial desktop companion for osu!. This community project is not affiliated
-with or endorsed by ppy. Windows is the initial target.
+Four quick osu! games, new every day. Everyone gets the same puzzles on the
+same UTC day, results are saved in the browser, and finished games share as a
+spoiler-free grid.
 
-The home screen brings together Play, Browse, Editor, a music dropdown, and
-player/social controls in a dark, cyan-accented shell. **Play** opens the existing
-**Rhythm** prototype: a single moving lane with timed taps, hold releases, and
-music-synchronized movement. Browse, Editor, profile, chat, friends, and update
-actions are UI placeholders. The music card opens and closes; playback is not
-connected. No song audio or artwork is bundled.
+![Home screen](docs/screenshots/home-desktop.jpg)
 
-Trivia remains a separate planned feature; its placeholders are preserved.
+| Game | How it plays |
+| --- | --- |
+| **Trivia** | Five multiple-choice questions computed from beatmap data: who hosted a set, who made a song, when it was ranked, which top difficulty is fastest, longest or hardest, which set has the most plays, which song comes from a given source. |
+| **Backdrop** | Name the map from its background. It starts zoomed in and blurred; every miss or skip pulls back, sharpens, and reveals a hint (year, length, BPM, mapper, artist). Six tries. |
+| **Higher or Lower** | Ten calls in a row on the stat of the day: plays, favourites, BPM, length or star rating. One miss ends the run. |
+| **Mapper** | Guess the set host from clues that get more specific: join year, country, mapping subscribers, a set's artwork, then a song and their initial. Five tries. |
 
-## Run
+Also: per-game streaks and stats, a countdown to the next puzzle, an archive of
+past days (archive plays don't count toward streaks), and keyboard play
+everywhere.
 
-Requires Node.js 22.12+ (or a newer supported LTS), npm, Rust, the Windows C++
-build tools, and WebView2. See [setup](docs/setup.md) for the native prerequisites.
+<p>
+  <img src="docs/screenshots/trivia-mobile.jpg" width="200" alt="Trivia question on a phone">
+  <img src="docs/screenshots/trivia-result-mobile.jpg" width="200" alt="Trivia result card">
+  <img src="docs/screenshots/higher-lower-mobile.jpg" width="200" alt="Higher or Lower on a phone">
+  <img src="docs/screenshots/mapper-mobile.jpg" width="200" alt="Mapper clues on a phone">
+</p>
 
-```sh
+This is an unofficial fan project, not affiliated with or endorsed by ppy Pty Ltd.
+
+## Running it
+
+Needs Node 22.18 or newer.
+
+```bash
 npm install
-npm run tauri dev
+npm run dev          # http://localhost:5205
+npm test             # domain tests (Vitest)
+npm run lint && npm run typecheck
+npm run build        # static site in dist/
 ```
 
-For browser-only development, use `npm run dev` and open the printed local URL.
-Use `npm test` for domain/audio-clock tests and `npm run build` for type checking
-and the production frontend. Native smoke build on Windows PowerShell:
+Keyboard: `1`–`4` answer Trivia and `Enter` moves on; `↑`/`↓` (or `H`/`L`) call
+Higher or Lower; the answer search uses arrow keys, `Enter` and `Escape`.
 
-```powershell
-npm.cmd run tauri -- build --debug --no-bundle
+## How the daily puzzles work
+
+- **Day key.** The puzzle day is the UTC date (`YYYY-MM-DD`), so a player in
+  Tokyo and one in Los Angeles see the same puzzle at the same moment. Puzzle
+  #1 is 2026-10-28 (`LAUNCH_DAY` in `src/shared/daily/day.ts`).
+- **Seeding.** A small seeded RNG (FNV-1a hash + mulberry32) is seeded with
+  `<game>:<day>`. Backdrop, Mapper and the Higher or Lower stat walk a fixed
+  shuffled rotation, so nothing repeats until the pool is used up.
+- **Fairness.** Trivia questions need clearly separated answers (for example
+  BPMs at least 10 apart, play counts at least 1.5× apart) and never reuse a
+  set within one day. Higher or Lower only chains maps whose values differ
+  enough to call. Tests check a full year of days.
+- **Progress.** Every move is saved to `localStorage` under
+  `osu-daily:v1:<game>`, so a closed tab resumes where it left off. Each record
+  stores a puzzle signature; if a dataset update changes that day's puzzle,
+  the stale progress is ignored instead of resuming a different puzzle. A
+  streak counts consecutive days finished on the day itself.
+
+## Data
+
+`src/shared/data/dataset.json` is a curated, versioned snapshot of 92 well-known
+ranked or approved osu!standard beatmapsets and their 84 hosts. It records the
+hardest standard difficulty's stars, BPM and length, plus set play counts,
+favourites, ranked dates and sources. Values that drift are labelled with the
+snapshot date in the UI. Artwork and avatars are hot-linked from
+`assets.ppy.sh` and `a.ppy.sh`, never stored here.
+
+The list of sets lives in `data/curated-sets.json`. To refresh it from the
+[osu! API v2](https://osu.ppy.sh/docs/index.html), create an OAuth application
+on your osu! account settings page and run:
+
+```bash
+OSU_CLIENT_ID=… OSU_CLIENT_SECRET=… npm run data:refresh
+OSU_CLIENT_ID=… OSU_CLIENT_SECRET=… npm run data:refresh -- --top 2   # also add the 100 most played ranked sets
 ```
 
-The native executable is written to `src-tauri/target/debug/notsu.exe`.
-Use `npm.cmd` when forwarding flags in PowerShell to avoid wrapper argument loss.
+The script uses client credentials with the `public` scope, stays under 60
+requests a minute, keeps the most played set when a song appears twice, drops
+explicit sets, and rewrites both JSON files. Review the diff before
+committing: a refresh reshuffles the rotations, so future puzzles change.
 
-## Play the prototype
-
-- Open **Play** from the notsu home screen, then **Play** in the Rhythm menu,
-  and select **Timing study** for ten seconds
-  of original synthesized practice.
-- Select **Two-hand rhythm drill** for a slower, 144 BPM practice of dotted
-  rhythms, triplets, sixteenth rolls, and holds with independent taps. Try
-  alternating F/J; all normal gameplay keys remain interchangeable.
-- For **Mou Ii Kai?**, select your own `audio.mp3` from the 88-second cut in
-  beatmap set 807850. The app verifies the exact recording locally. The chart
-  covers 0:35.401–1:15.401; no music or artwork is included in this repository.
-  The challenge arrangement adds short two-hand rolls and syncopated patterns,
-  with recovery gaps between the fast passages.
-- Press any letter, number, punctuation key, or Space when an orb's centre crosses
-  the target ring.
-- For a hold ribbon, press its solid head and release its hollow endpoint with the same key. Use
-  other keys for taps during the hold. Key repeats and shortcut combinations
-  are ignored. Missing notes or pressing extra keys breaks combo and lowers accuracy.
-- Escape or focus loss stops the attempt. Retry starts from a fresh countdown;
-  mid-run resume is deliberately not supported in this prototype.
-- Open **Settings** from the Rhythm menu to choose Midnight or High Contrast, adjust music
-  and hit-sound volumes separately, and set timing offset or reduced motion. Reduced motion
-  keeps the lane stationary and hit highlights static. Only preferences are saved
-  locally; audio and results are not persisted.
-
-The song chart is an original beat-grid study, not an imported gameplay pattern
-or a finished transcription. Its rhythm and choreography need musical playtesting.
-See [Rhythm design and testing](docs/rhythm.md).
-
-## Structure
+## Project structure
 
 ```text
 src/
-  main.tsx                   Standard frontend entry point
-  app/                       Composition and global styles
+  app/                  Shell, routes, footer, cross-game progress helpers
   features/
-    home/                    Home layout, music dropdown, and Zustand UI store
-      components/            Header, activity cards, and original SVG artwork
-    rhythm/                  Feature screen, hook, and presentation state
-      components/            Menus, results, and Canvas renderer
-      domain/                Pure TypeScript scoring, input rules, chart geometry
-      data/                  Authored charts, audio, and local preference adapters
-    trivia/                  Preserved future feature boundary
-  shared/                    Only genuinely shared responsibilities
-src-tauri/
-  src/                       Minimal Rust desktop host
-docs/                        Setup, direction, and feature notes
+    home/               Home tiles (+ domain/tileArt: spoiler-free artwork)
+    trivia/             TriviaPage, components/, domain/ (questions, puzzle, session)
+    backdrop/           BackdropPage, components/, domain/ (puzzle, reveal views)
+    higher-lower/       HigherLowerPage, components/, domain/ (stats, chain, session)
+    mapper/             MapperPage, components/, domain/ (clues, puzzle)
+    archive/            Past puzzles
+  shared/
+    daily/              UTC day keys, countdown, seeded RNG and rotation
+    progress/           localStorage records, resume, streaks and stats
+    guessing/           Rules shared by the guess-in-N games
+    data/               Dataset types, bundled JSON, artwork URLs
+    search/             Search-as-you-type matching
+    share/              Spoiler-free share text
+    components/         Buttons, layout, result card, answer search, artwork
+scripts/                Dataset refresh (osu! API v2) and its transform
+data/                   Curated beatmapset IDs
+docs/                   Design direction, release checklist, screenshots
 ```
 
-React Router provides hash-based routes for the desktop WebView: `/` is Home and
-`/rhythm` preserves the prototype. Zustand owns the home music dropdown state.
-React and React DOM render the UI; Vite, TypeScript, Vitest, and the Tauri CLI are
-development tools. The playfield uses Canvas 2D and Web Audio directly.
+Domain modules don't import React or browser APIs, so the game rules are
+tested on their own.
 
-Keep scoring independent of rendering and audio APIs. Group code by feature,
-colocate tests, and avoid duplicate rules in Rust. Keep semantic controls,
-keyboard navigation, visible focus, and reduced-motion support. Commit both
-`package-lock.json` and `src-tauri/Cargo.lock`.
+## Deploying
 
-Account connection and other companion capabilities are future work. Resolve
-supported desktop OAuth and secret handling before implementing authentication.
-Never embed production client secrets in frontend assets or Rust binaries.
+The site is static. `wrangler.jsonc` serves `dist/` as Cloudflare Worker static
+assets with single-page-app fallback; `public/_headers` adds security and
+caching headers. After `npx wrangler@4 login`, `npm run deploy` builds and
+deploys. CI (`.github/workflows/ci.yml`) runs lint, typecheck, tests and the
+build on every push and pull request. See `docs/RELEASE_CHECKLIST.md`.

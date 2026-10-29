@@ -1,132 +1,65 @@
-# Implementation direction
+# Direction
 
-## Scope
+osu! daily started as a one-game .NET MAUI app plan. On 2026-10-28 the owner
+switched it to a website: "the goal of osu-daily is to have nice fun mini games
+for osu that me and others can play daily." Trivia stayed the first game;
+Backdrop, Higher or Lower and Mapper joined it.
 
-notsu is an unofficial desktop companion for osu!, releasing on Windows first.
-Other desktop platforms are deferred.
-It should be useful while osu! is closed. Rhythm is now the first implemented
-prototype; the remaining companion capabilities are still planned.
+## Visual system
 
-The selected stack is Tauri 2 with React, TypeScript, HTML/CSS, and Vite. Keep
-ordinary application logic in TypeScript and add Rust native integration as
-needed. Start from the official template; see [setup guidance](setup.md).
-Learning or contributing to osu!'s own codebase is a separate goal and does not
-determine this application's dependencies.
+The bar is a modern, visual-led site with very little text and big,
+satisfying controls.
 
-Trivia remains a planned casual feature. Preserve its fixture-based, deterministic
-daily design and its separate boundary. Rhythm is implemented independently; do
-not create a general game framework. The requested home-screen destinations are
-UI placeholders until their individual features are approved.
+- **Palette:** near-black ink `#0b0a0f`, surfaces `#15131b` / `#1e1b26`,
+  hairline borders at 9% white, text `#f6f4f9`, muted `#a7a2b5`. Accent pink
+  `#ff4f9a` (osu!-adjacent, not osu!'s own value) with dark ink text on it.
+  Feedback: mint `#36d68f` for correct, coral `#ff6a5c` for wrong, always
+  paired with a check or cross icon. Tokens live in `src/styles.css`.
+- **Type:** one family, Outfit (variable, self-hosted). Extra-bold, tight
+  headings; tabular numerals for scores and countdowns.
+- **Shape:** rounded surfaces (16–28 px), 56–64 px buttons, 44 px minimum touch
+  targets, generous spacing.
+- **Artwork first:** home tiles, Trivia subjects, Higher or Lower cards and
+  Mapper clues show beatmap artwork under a dark scrim. Backdrop is built
+  around the artwork itself.
+- **Motion:** short rise and pop entrances, a shake on a wrong answer, and
+  zoom-and-blur easing in Backdrop. `prefers-reduced-motion` cuts animation to
+  near zero.
+- **Avoid:** gradient blobs, emoji in UI copy, marketing copy, osu! logos or
+  lookalike marks. The site mark is an original ring and dot.
 
-## Current home-screen direction
+An earlier native-iOS reference informed the restrained density, rounded
+surfaces and quiet transitions; the web layout itself is new.
 
-The approved September 26, 2026 reference is the user-supplied notsu mockup with
-a nearly black background, subtle outlined surfaces, cyan orb-and-line artwork,
-and a larger central Play card between Browse and Editor. Implement the artwork
-as original, static SVG rather than shipping the generated image as a background.
+## Accessibility
 
-Keep the notsu logo at the far left. Place Play, Browse, Editor, and the music icon
-beside it; put profile, chat, and friends on the right. The player lives in its
-own dropdown card under the music icon. Use equal top/bottom header padding and
-anchor the update card near the footer, allowing the activity area to absorb
-extra height. Smaller windows reflow and scroll instead of clipping controls.
+- Keyboard play throughout, visible pink focus rings and a skip link.
+- Answer feedback is announced through polite live regions.
+- The answer search is an ARIA combobox with a listbox.
+- axe-core 4 reported no WCAG 2.1 A/AA or best-practice violations on any
+  route, including result screens, an answered question and the open search
+  list (checked 2026-10-28, production build).
+- No horizontal overflow at 375 px; layouts tested at 375 px and 1440 px.
 
-React Router and Zustand are the approved routing/UI-state baseline. Home is a
-separate feature and the existing Rhythm prototype remains available through Play.
-Only the dropdown and existing Play route are wired; other destinations are
-placeholders. Keep keyboard access, visible focus, Escape dismissal, reduced-motion
-support, and an unobtrusive unofficial-community-project attribution. Do not show
-fabricated live performance or playback metrics.
+## Data
 
-## Current Rhythm direction
-
-The user approved a minimal dark blue-gray stage, shaded cyan tap orbs, violet hold
-ribbons, and a hollow target ring. Short local hit effects are allowed; avoid
-background particle fields, bloom, drum imagery, or colour-to-key matching.
-A single line moves and rotates smoothly to authored
-musical beats. Every movement has a scheduled start, destination, and arrival.
-The same musical phrase can reuse the same movement vocabulary.
-
-The retained prototype menu is a simple rhythm-game screen, inspired by the clarity
-of osu! and other rhythm-game menus without copying their branding or artwork.
-Use the game's own orb-and-line motif, a large wordmark, and only Play, Settings,
-and How to play in the Rhythm menu. Put chart selection and local audio loading behind Play,
-and preferences on their own screen. No slogans, promotional copy, prototype
-badges, or decorative uppercase labels. Menu body text is 18px; ancillary labels
-and gameplay text are at least 16px. Preserve both skin palettes, visible keyboard
-focus, native radio-keyboard selection, and Escape/back navigation. Keep the home
-art static, including with reduced motion. Do not add speculative menu destinations.
-
-This supersedes the old black-and-sage palette below, which is retained as
-historical reference only. The generated mockups were planning references, not
-shipped assets. See [Rhythm](rhythm.md) for mechanics, limitations, and verification.
-
-## Historical supplied design reference
-
-Reference: `~/projects/moku-project/Moku-iOS`. Inspected the actual theme,
-page headers, home surfaces, feature layout, and an implemented settings screenshot.
-
-- Background: `#080808`; surface: `#171717`; sage accent: `#7AAA7A`.
-- Native system typography, semibold page titles around 19 points, and muted
-  secondary text. Preserve text scaling and clear hierarchy.
-- Rounded cards around 16 points, subtle borders, and restrained density.
-- Compact centered headers, 44-point touch targets, and pill-shaped actions.
-- Quiet transitions and feedback that respect Reduce Motion.
-- Moku uses 10-point outer page padding and 24-point section spacing on Home.
-  Adapt spacing for readable trivia questions rather than reproducing a screen.
-
-The source is `Moku/Shared/Theme/NavigationStyle.swift`,
-`Moku/Shared/Components/PageHeader.swift`, and
-`Moku/Shared/Components/HomeSurface.swift` in that project.
-These previous notes are not the current Rhythm specification. Retain the lessons
-about hierarchy and restraint, but do not reintroduce the superseded palette.
-Confirm current references before unrelated substantial UI work.
-
-## Initial osu! data research
-
-Reviewed the [official API v2 documentation](https://osu.ppy.sh/docs/index.html).
-Public reads can use OAuth client credentials with the `public` scope. Keep
-the secret in a future developer-side importer, never in the distributed app.
-The documented ceiling is 60 requests/minute; caching is encouraged, and bulk
-harvesting should use [official data dumps](https://data.ppy.sh/) instead.
-
-`GET /beatmaps/{id}` and beatmapset metadata support textual trivia. Distinguish
-individual difficulties from sets: BPM, length, and difficulty belong to maps;
-ranked date and favourites belong to sets. Mapper questions must account for
-multiple owners and guest difficulties. Reject missing data and tied answers.
-
-Artist, ranked-date, BPM, and length questions are promising initial candidates.
-Difficulty and popularity need a frozen snapshot and precise wording. Player
-statistics are mode-dependent and change over time; defer those categories.
-No dataset has been imported or verified yet.
-
-Use a bundled snapshot first. Proposed challenge identity: UTC date + algorithm
-version + dataset fingerprint. Store the generated questions and each answer
-immediately. UTC gives everyone the same rollover; explain that in the eventual UI.
-
-## Future integration boundaries
-
-- Official API: evaluate player profiles, beatmaps, and scores against documented
-  routes and scopes. The documented authorization-code exchange requires a client
-  secret; the reviewed documentation does not describe PKCE. Confirm a supported
-  native-client approach or a trusted broker before implementing sign-in.
-- Local integration: investigate user-selected installations, collections, replay
-  files, and opening maps separately. Identify undocumented formats explicitly.
-- Community services: before introducing a dependency, document what it provides,
-  supported integration mechanisms, reliability, authentication, licensing/terms,
-  and which functionality notsu owns versus delegates.
-
-None of these integrations is implemented or required for the initial Trivia slice.
+- The bundled snapshot was bootstrapped from public osu! beatmapset and
+  profile pages, using the same transform as the API refresh script. Sets were
+  chosen as widely known ranked maps; a mirror's search only helped look up
+  set IDs, and every stored value comes from osu! itself.
+- Set-level vs difficulty-level fields: BPM, length and stars come from the
+  hardest osu!standard difficulty; play count, favourites and ranked date
+  belong to the set. Questions say "top difficulty" where it matters.
+- Approved sets (pre-2014 status) are worded as "approved", not "ranked".
+- Hosts use their current username; previous names are searchable in Mapper.
+- Snapshot values (plays, favourites, stars, mapping subscribers) are labelled
+  with the snapshot month or date wherever they are shown.
+- Player statistics are left out: they are mode-dependent and change daily.
 
 ## Identity and assets
 
-Follow the [official brand guidance](https://osu.ppy.sh/wiki/en/Brand_identity_guidelines):
-keep `osu!` lowercase and identify this as an unofficial community project.
-Use an original app identity. No official logo or third-party media has been copied.
-
-The [copyright policy](https://osu.ppy.sh/legal/en/Copyright) is not a blanket
-redistribution license for songs or beatmap artwork. API caching guidance likewise
-does not establish redistribution rights for every asset. Start with structured
-text and source attribution; review dataset terms before distributing a snapshot.
-No general API-specific attribution mandate was identified in the reviewed API
-documentation; retain provenance and recheck applicable terms before release.
+Following the [brand guidelines](https://osu.ppy.sh/wiki/en/Brand_identity_guidelines),
+"osu!" stays lowercase and the site says it is an unofficial community project.
+Artwork and avatars are referenced from osu!'s asset servers, never stored or
+redistributed in this repo. The share image (`public/og.png`) is original and
+contains no beatmap artwork.

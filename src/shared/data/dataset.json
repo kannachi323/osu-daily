@@ -1,0 +1,2654 @@
+{
+ "version": 1,
+ "snapshotDate": "2026-10-28",
+ "source": "Public osu! beatmapset and profile pages (bootstrap snapshot)",
+ "beatmapsets": [
+  {
+   "id": 141,
+   "artist": "FAIRY FORE",
+   "title": "Vivid",
+   "creator": "Hitoshirenu Shourai",
+   "creatorId": 602,
+   "status": "ranked",
+   "rankedDate": "2007-11-01",
+   "playCount": 2268512,
+   "favouriteCount": 424,
+   "source": "",
+   "difficultyCount": 4,
+   "hardest": {
+    "name": "Insane",
+    "stars": 4.88,
+    "bpm": 168,
+    "lengthSeconds": 14
+   }
+  },
+  {
+   "id": 1287,
+   "artist": "Hatsune Miku",
+   "title": "Ievan Polkka",
+   "creator": "James",
+   "creatorId": 5728,
+   "status": "ranked",
+   "rankedDate": "2008-05-09",
+   "playCount": 14476663,
+   "favouriteCount": 11832,
+   "source": "",
+   "difficultyCount": 3,
+   "hardest": {
+    "name": "Hard",
+    "stars": 3.08,
+    "bpm": 119,
+    "lengthSeconds": 146
+   }
+  },
+  {
+   "id": 8506,
+   "artist": "Linkin Park",
+   "title": "Numb",
+   "creator": "Larto",
+   "creatorId": 12328,
+   "status": "ranked",
+   "rankedDate": "2009-08-11",
+   "playCount": 2467735,
+   "favouriteCount": 3014,
+   "source": "",
+   "difficultyCount": 3,
+   "hardest": {
+    "name": "Intense",
+    "stars": 4.31,
+    "bpm": 110.04,
+    "lengthSeconds": 177
+   }
+  },
+  {
+   "id": 9183,
+   "artist": "Daft Punk",
+   "title": "Harder, Better, Faster, Stronger",
+   "creator": "Mashley",
+   "creatorId": 41481,
+   "status": "ranked",
+   "rankedDate": "2009-09-13",
+   "playCount": 3295275,
+   "favouriteCount": 2816,
+   "source": "",
+   "difficultyCount": 2,
+   "hardest": {
+    "name": "Hard",
+    "stars": 3.83,
+    "bpm": 123.5,
+    "lengthSeconds": 223
+   }
+  },
+  {
+   "id": 10067,
+   "artist": "fripSide",
+   "title": "only my railgun (TV Size)",
+   "creator": "DJPop",
+   "creatorId": 2363,
+   "status": "ranked",
+   "rankedDate": "2009-10-27",
+   "playCount": 6816087,
+   "favouriteCount": 4211,
+   "source": "To Aru Kagaku no Railgun",
+   "difficultyCount": 4,
+   "hardest": {
+    "name": "Insane",
+    "stars": 3.71,
+    "bpm": 143,
+    "lengthSeconds": 88
+   }
+  },
+  {
+   "id": 18260,
+   "artist": "Masayoshi Minoshima feat. nomico",
+   "title": "Bad Apple!!",
+   "creator": "ouranhshc",
+   "creatorId": 139493,
+   "status": "ranked",
+   "rankedDate": "2010-07-30",
+   "playCount": 18697269,
+   "favouriteCount": 20388,
+   "source": "Touhou",
+   "difficultyCount": 4,
+   "hardest": {
+    "name": "Guest Diff Collab",
+    "stars": 3.95,
+    "bpm": 138,
+    "lengthSeconds": 211
+   }
+  },
+  {
+   "id": 20789,
+   "artist": "Kitsune^2",
+   "title": "Rainbow Tylenol",
+   "creator": "Blue Dragon",
+   "creatorId": 19048,
+   "status": "ranked",
+   "rankedDate": "2011-05-22",
+   "playCount": 4413883,
+   "favouriteCount": 1250,
+   "source": "",
+   "difficultyCount": 4,
+   "hardest": {
+    "name": "Hell",
+    "stars": 6.84,
+    "bpm": 135,
+    "lengthSeconds": 108
+   }
+  },
+  {
+   "id": 21582,
+   "artist": "ClariS",
+   "title": "Irony (TV Size)",
+   "creator": "Hakeru",
+   "creatorId": 345422,
+   "status": "ranked",
+   "rankedDate": "2011-01-03",
+   "playCount": 3988787,
+   "favouriteCount": 1386,
+   "source": "Ore no Imouto ga Konna ni Kawaii Wake ga Nai",
+   "difficultyCount": 4,
+   "hardest": {
+    "name": "Insane",
+    "stars": 3.74,
+    "bpm": 134,
+    "lengthSeconds": 88
+   }
+  },
+  {
+   "id": 25739,
+   "artist": "IOSYS",
+   "title": "Cirno's Perfect Math Class",
+   "creator": "Louis Cyphre",
+   "creatorId": 186243,
+   "status": "ranked",
+   "rankedDate": "2011-02-23",
+   "playCount": 6800095,
+   "favouriteCount": 2729,
+   "source": "Touhou",
+   "difficultyCount": 4,
+   "hardest": {
+    "name": "TAG4",
+    "stars": 7.11,
+    "bpm": 175,
+    "lengthSeconds": 121
+   }
+  },
+  {
+   "id": 39031,
+   "artist": "Yousei Teikoku",
+   "title": "Kuusou Mesorogiwi",
+   "creator": "Andrea",
+   "creatorId": 33599,
+   "status": "ranked",
+   "rankedDate": "2011-11-09",
+   "playCount": 10585735,
+   "favouriteCount": 6216,
+   "source": "Mirai Nikki",
+   "difficultyCount": 4,
+   "hardest": {
+    "name": "Insane",
+    "stars": 4.54,
+    "bpm": 230,
+    "lengthSeconds": 156
+   }
+  },
+  {
+   "id": 39804,
+   "artist": "xi",
+   "title": "FREEDOM DiVE",
+   "creator": "Nakagawa-Kanon",
+   "creatorId": 87065,
+   "status": "approved",
+   "rankedDate": "2012-06-23",
+   "playCount": 22486331,
+   "favouriteCount": 10171,
+   "source": "BMS",
+   "difficultyCount": 2,
+   "hardest": {
+    "name": "FOUR DIMENSIONS",
+    "stars": 7.81,
+    "bpm": 222.22,
+    "lengthSeconds": 258
+   }
+  },
+  {
+   "id": 41823,
+   "artist": "The Quick Brown Fox",
+   "title": "The Big Black",
+   "creator": "Blue Dragon",
+   "creatorId": 19048,
+   "status": "approved",
+   "rankedDate": "2012-02-19",
+   "playCount": 41380027,
+   "favouriteCount": 13944,
+   "source": "",
+   "difficultyCount": 1,
+   "hardest": {
+    "name": "WHO'S AFRAID OF THE BIG BLACK",
+    "stars": 6.93,
+    "bpm": 360.3,
+    "lengthSeconds": 139
+   }
+  },
+  {
+   "id": 73474,
+   "artist": "Cres",
+   "title": "End Time",
+   "creator": "Mirage",
+   "creatorId": 870584,
+   "status": "ranked",
+   "rankedDate": "2013-01-26",
+   "playCount": 4273488,
+   "favouriteCount": 1289,
+   "source": "BMS",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "eXtra",
+    "stars": 5.81,
+    "bpm": 180,
+    "lengthSeconds": 129
+   }
+  },
+  {
+   "id": 87630,
+   "artist": "Linked Horizon",
+   "title": "Guren no Yumiya (TV Size)",
+   "creator": "Kuria",
+   "creatorId": 870067,
+   "status": "ranked",
+   "rankedDate": "2013-04-27",
+   "playCount": 38807924,
+   "favouriteCount": 27588,
+   "source": "Shingeki no Kyojin",
+   "difficultyCount": 4,
+   "hardest": {
+    "name": "Insane",
+    "stars": 4.35,
+    "bpm": 180.68,
+    "lengthSeconds": 88
+   }
+  },
+  {
+   "id": 93523,
+   "artist": "Tatsh",
+   "title": "IMAGE -MATERIAL- <Version 0>",
+   "creator": "Scorpiour",
+   "creatorId": 867259,
+   "status": "approved",
+   "rankedDate": "2013-08-17",
+   "playCount": 9630500,
+   "favouriteCount": 6760,
+   "source": "",
+   "difficultyCount": 1,
+   "hardest": {
+    "name": "Scorpiour",
+    "stars": 7.98,
+    "bpm": 260,
+    "lengthSeconds": 385
+   }
+  },
+  {
+   "id": 130104,
+   "artist": "Fujijo Seitokai Shikkou-bu",
+   "title": "Best FriendS -TV Size-",
+   "creator": "Flask",
+   "creatorId": 959763,
+   "status": "ranked",
+   "rankedDate": "2014-11-09",
+   "playCount": 11956495,
+   "favouriteCount": 1923,
+   "source": "LOVE LAB",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "Fycho's Insane",
+    "stars": 4.65,
+    "bpm": 163,
+    "lengthSeconds": 86
+   }
+  },
+  {
+   "id": 134828,
+   "artist": "Pegboard Nerds",
+   "title": "Disconnected",
+   "creator": "Timorisu",
+   "creatorId": 2128920,
+   "status": "ranked",
+   "rankedDate": "2015-04-24",
+   "playCount": 4859434,
+   "favouriteCount": 2859,
+   "source": "",
+   "difficultyCount": 4,
+   "hardest": {
+    "name": "Disconnected",
+    "stars": 4.5,
+    "bpm": 128,
+    "lengthSeconds": 239
+   }
+  },
+  {
+   "id": 151720,
+   "artist": "ginkiha",
+   "title": "EOS",
+   "creator": "alacat",
+   "creatorId": 869782,
+   "status": "ranked",
+   "rankedDate": "2014-06-02",
+   "playCount": 3662765,
+   "favouriteCount": 2900,
+   "source": "BMS",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "Lycoris",
+    "stars": 5.62,
+    "bpm": 175,
+    "lengthSeconds": 146
+   }
+  },
+  {
+   "id": 158023,
+   "artist": "UNDEAD CORPORATION",
+   "title": "Everything will freeze",
+   "creator": "Ekoro",
+   "creatorId": 284905,
+   "status": "ranked",
+   "rankedDate": "2015-03-24",
+   "playCount": 64576001,
+   "favouriteCount": 41047,
+   "source": "東方Project",
+   "difficultyCount": 6,
+   "hardest": {
+    "name": "Time Freeze",
+    "stars": 8.31,
+    "bpm": 240,
+    "lengthSeconds": 194
+   }
+  },
+  {
+   "id": 166062,
+   "artist": "Lime",
+   "title": "Renai Syndrome",
+   "creator": "kisata",
+   "creatorId": 1929729,
+   "status": "ranked",
+   "rankedDate": "2019-07-31",
+   "playCount": 289413,
+   "favouriteCount": 188,
+   "source": "BMS",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "Eternal",
+    "stars": 6.01,
+    "bpm": 180,
+    "lengthSeconds": 140
+   }
+  },
+  {
+   "id": 179323,
+   "artist": "Sakamoto Maaya",
+   "title": "Okaerinasai (tomatomerde Remix)",
+   "creator": "Azer",
+   "creatorId": 2155578,
+   "status": "ranked",
+   "rankedDate": "2014-10-10",
+   "playCount": 2516869,
+   "favouriteCount": 3586,
+   "source": "Tamayura ~hitotose~",
+   "difficultyCount": 1,
+   "hardest": {
+    "name": "Collab",
+    "stars": 4.98,
+    "bpm": 176,
+    "lengthSeconds": 353
+   }
+  },
+  {
+   "id": 179639,
+   "artist": "MAN WITH A MISSION",
+   "title": "database feat. TAKUMA(10-FEET)",
+   "creator": "Reditum",
+   "creatorId": 135630,
+   "status": "ranked",
+   "rankedDate": "2015-10-27",
+   "playCount": 1961768,
+   "favouriteCount": 861,
+   "source": "ログ・ホライズン",
+   "difficultyCount": 6,
+   "hardest": {
+    "name": "lfj's Database",
+    "stars": 4.85,
+    "bpm": 177,
+    "lengthSeconds": 86
+   }
+  },
+  {
+   "id": 180138,
+   "artist": "Halozy",
+   "title": "Genryuu Kaiko",
+   "creator": "Hollow Wings",
+   "creatorId": 416662,
+   "status": "ranked",
+   "rankedDate": "2015-04-11",
+   "playCount": 4681226,
+   "favouriteCount": 3972,
+   "source": "東方Project",
+   "difficultyCount": 1,
+   "hardest": {
+    "name": "Higan Torrent",
+    "stars": 7.87,
+    "bpm": 173,
+    "lengthSeconds": 302
+   }
+  },
+  {
+   "id": 185392,
+   "artist": "Utada Hikaru",
+   "title": "Sakura Nagashi (el poco maro Remix)",
+   "creator": "ProfessionalBox",
+   "creatorId": 3250792,
+   "status": "ranked",
+   "rankedDate": "2014-09-08",
+   "playCount": 498353,
+   "favouriteCount": 726,
+   "source": "ヱヴァンゲリヲン新劇場版：Q",
+   "difficultyCount": 1,
+   "hardest": {
+    "name": "Eternity",
+    "stars": 5.31,
+    "bpm": 176,
+    "lengthSeconds": 434
+   }
+  },
+  {
+   "id": 228815,
+   "artist": "sakuzyo",
+   "title": "Altale",
+   "creator": "toybot",
+   "creatorId": 2848604,
+   "status": "ranked",
+   "rankedDate": "2016-08-20",
+   "playCount": 1012902,
+   "favouriteCount": 773,
+   "source": "BMS",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "Bonzi's Extra",
+    "stars": 5.21,
+    "bpm": 90,
+    "lengthSeconds": 144
+   }
+  },
+  {
+   "id": 264299,
+   "artist": "sakuzyo",
+   "title": "Imprinting",
+   "creator": "Squigly",
+   "creatorId": 3117313,
+   "status": "ranked",
+   "rankedDate": "2015-09-15",
+   "playCount": 4045573,
+   "favouriteCount": 1336,
+   "source": "",
+   "difficultyCount": 7,
+   "hardest": {
+    "name": "Impress",
+    "stars": 6.47,
+    "bpm": 175,
+    "lengthSeconds": 114
+   }
+  },
+  {
+   "id": 292301,
+   "artist": "xi",
+   "title": "Blue Zenith",
+   "creator": "Asphyxia",
+   "creatorId": 1715720,
+   "status": "ranked",
+   "rankedDate": "2015-08-16",
+   "playCount": 42107598,
+   "favouriteCount": 15229,
+   "source": "",
+   "difficultyCount": 9,
+   "hardest": {
+    "name": "FOUR DIMENSIONS",
+    "stars": 7.51,
+    "bpm": 200,
+    "lengthSeconds": 249
+   }
+  },
+  {
+   "id": 295581,
+   "artist": "ARM feat. Nanahira",
+   "title": "Bakunana*Testroyer",
+   "creator": "Lami",
+   "creatorId": 899031,
+   "status": "ranked",
+   "rankedDate": "2015-08-19",
+   "playCount": 5439496,
+   "favouriteCount": 1542,
+   "source": "BeatStream",
+   "difficultyCount": 8,
+   "hardest": {
+    "name": "Nana",
+    "stars": 6.6,
+    "bpm": 200,
+    "lengthSeconds": 116
+   }
+  },
+  {
+   "id": 297933,
+   "artist": "Yooh",
+   "title": "Ice Angel",
+   "creator": "ktgster",
+   "creatorId": 53378,
+   "status": "ranked",
+   "rankedDate": "2015-05-14",
+   "playCount": 4946232,
+   "favouriteCount": 1887,
+   "source": "",
+   "difficultyCount": 1,
+   "hardest": {
+    "name": "Saint",
+    "stars": 6.03,
+    "bpm": 168,
+    "lengthSeconds": 358
+   }
+  },
+  {
+   "id": 320118,
+   "artist": "Reol",
+   "title": "No title",
+   "creator": "VINXIS",
+   "creatorId": 4323406,
+   "status": "ranked",
+   "rankedDate": "2015-12-20",
+   "playCount": 131770449,
+   "favouriteCount": 37400,
+   "source": "",
+   "difficultyCount": 14,
+   "hardest": {
+    "name": "jieusieu's Lemur",
+    "stars": 6.61,
+    "bpm": 200,
+    "lengthSeconds": 70
+   }
+  },
+  {
+   "id": 332532,
+   "artist": "Panda Eyes & Teminite",
+   "title": "Highscore",
+   "creator": "Ciyus Miapah",
+   "creatorId": 2805457,
+   "status": "ranked",
+   "rankedDate": "2015-09-13",
+   "playCount": 66902160,
+   "favouriteCount": 35893,
+   "source": "",
+   "difficultyCount": 6,
+   "hardest": {
+    "name": "Game Over",
+    "stars": 7.08,
+    "bpm": 110,
+    "lengthSeconds": 257
+   }
+  },
+  {
+   "id": 355322,
+   "artist": "nekodex",
+   "title": "circles!",
+   "creator": "pishifat",
+   "creatorId": 3178418,
+   "status": "ranked",
+   "rankedDate": "2015-09-26",
+   "playCount": 5037168,
+   "favouriteCount": 3922,
+   "source": "",
+   "difficultyCount": 4,
+   "hardest": {
+    "name": "insane!",
+    "stars": 5.17,
+    "bpm": 184,
+    "lengthSeconds": 137
+   }
+  },
+  {
+   "id": 357777,
+   "artist": "NOMA",
+   "title": "Brain Power",
+   "creator": "Jacob",
+   "creatorId": 2786413,
+   "status": "ranked",
+   "rankedDate": "2017-10-30",
+   "playCount": 19373391,
+   "favouriteCount": 10145,
+   "source": "SOUND VOLTEX II -infinite infection-",
+   "difficultyCount": 8,
+   "hardest": {
+    "name": "INFINITE",
+    "stars": 6.35,
+    "bpm": 170,
+    "lengthSeconds": 107
+   }
+  },
+  {
+   "id": 373373,
+   "artist": "toby fox",
+   "title": "Hopes and Dreams",
+   "creator": "pkk",
+   "creatorId": 3620525,
+   "status": "ranked",
+   "rankedDate": "2016-04-04",
+   "playCount": 10010272,
+   "favouriteCount": 9767,
+   "source": "Undertale",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "DREAMER",
+    "stars": 5.19,
+    "bpm": 170.68,
+    "lengthSeconds": 179
+   }
+  },
+  {
+   "id": 382400,
+   "artist": "DragonForce",
+   "title": "Through the Fire and Flames",
+   "creator": "PoNo",
+   "creatorId": 4610047,
+   "status": "ranked",
+   "rankedDate": "2017-02-09",
+   "playCount": 20270165,
+   "favouriteCount": 10659,
+   "source": "",
+   "difficultyCount": 1,
+   "hardest": {
+    "name": "Myth",
+    "stars": 6.68,
+    "bpm": 200,
+    "lengthSeconds": 441
+   }
+  },
+  {
+   "id": 386117,
+   "artist": "Kano",
+   "title": "Stella-rium",
+   "creator": "Kinomi",
+   "creatorId": 1867171,
+   "status": "ranked",
+   "rankedDate": "2016-01-02",
+   "playCount": 15289252,
+   "favouriteCount": 2816,
+   "source": "放課後のプレアデス",
+   "difficultyCount": 8,
+   "hardest": {
+    "name": "Pleiades",
+    "stars": 5.47,
+    "bpm": 177,
+    "lengthSeconds": 88
+   }
+  },
+  {
+   "id": 387700,
+   "artist": "toby fox",
+   "title": "MEGALOVANIA",
+   "creator": "Kyshiro",
+   "creatorId": 640611,
+   "status": "ranked",
+   "rankedDate": "2016-07-20",
+   "playCount": 51624526,
+   "favouriteCount": 43073,
+   "source": "Undertale",
+   "difficultyCount": 7,
+   "hardest": {
+    "name": "Burn",
+    "stars": 6.06,
+    "bpm": 240,
+    "lengthSeconds": 144
+   }
+  },
+  {
+   "id": 396077,
+   "artist": "Alan Walker",
+   "title": "Faded",
+   "creator": "Astarte",
+   "creatorId": 5297826,
+   "status": "ranked",
+   "rankedDate": "2017-04-15",
+   "playCount": 7404153,
+   "favouriteCount": 8110,
+   "source": "",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "Nowa's Eternal Silence",
+    "stars": 3.76,
+    "bpm": 90,
+    "lengthSeconds": 204
+   }
+  },
+  {
+   "id": 399151,
+   "artist": "Camellia",
+   "title": "crystallized",
+   "creator": "-Visceral-",
+   "creatorId": 1855540,
+   "status": "ranked",
+   "rankedDate": "2016-06-28",
+   "playCount": 4042238,
+   "favouriteCount": 3939,
+   "source": "",
+   "difficultyCount": 9,
+   "hardest": {
+    "name": "handsome's Master",
+    "stars": 6.5,
+    "bpm": 174,
+    "lengthSeconds": 241
+   }
+  },
+  {
+   "id": 403427,
+   "artist": "xi",
+   "title": "Akasha",
+   "creator": "Atsuro",
+   "creatorId": 2279351,
+   "status": "ranked",
+   "rankedDate": "2016-07-02",
+   "playCount": 4163603,
+   "favouriteCount": 1712,
+   "source": "",
+   "difficultyCount": 7,
+   "hardest": {
+    "name": "Aether",
+    "stars": 6.98,
+    "bpm": 185,
+    "lengthSeconds": 255
+   }
+  },
+  {
+   "id": 410162,
+   "artist": "Imperial Circus Dead Decadence",
+   "title": "Uta",
+   "creator": "Kite",
+   "creatorId": 134572,
+   "status": "ranked",
+   "rankedDate": "2016-04-12",
+   "playCount": 8371873,
+   "favouriteCount": 5611,
+   "source": "",
+   "difficultyCount": 1,
+   "hardest": {
+    "name": "Himei",
+    "stars": 7.55,
+    "bpm": 205,
+    "lengthSeconds": 528
+   }
+  },
+  {
+   "id": 413117,
+   "artist": "DECO*27",
+   "title": "Ghost Rule",
+   "creator": "Awaken",
+   "creatorId": 1380253,
+   "status": "ranked",
+   "rankedDate": "2019-11-20",
+   "playCount": 14426568,
+   "favouriteCount": 15662,
+   "source": "",
+   "difficultyCount": 11,
+   "hardest": {
+    "name": "Mayday",
+    "stars": 8.2,
+    "bpm": 210,
+    "lengthSeconds": 206
+   }
+  },
+  {
+   "id": 414543,
+   "artist": "Camellia & DJ Genki",
+   "title": "Feelin Sky",
+   "creator": "Strategas",
+   "creatorId": 2971837,
+   "status": "ranked",
+   "rankedDate": "2016-07-07",
+   "playCount": 1061984,
+   "favouriteCount": 437,
+   "source": "",
+   "difficultyCount": 1,
+   "hardest": {
+    "name": "Cloud",
+    "stars": 6.48,
+    "bpm": 174,
+    "lengthSeconds": 344
+   }
+  },
+  {
+   "id": 436611,
+   "artist": "DM DOKURO",
+   "title": "Reality Check Through The Skull",
+   "creator": "SnowNiNo_",
+   "creatorId": 2506267,
+   "status": "ranked",
+   "rankedDate": "2016-05-23",
+   "playCount": 3075330,
+   "favouriteCount": 3998,
+   "source": "UNDERTALE",
+   "difficultyCount": 1,
+   "hardest": {
+    "name": "UnReality",
+    "stars": 5.79,
+    "bpm": 260,
+    "lengthSeconds": 329
+   }
+  },
+  {
+   "id": 440997,
+   "artist": "LeaF",
+   "title": "Evanescent",
+   "creator": "Anxient",
+   "creatorId": 4561368,
+   "status": "ranked",
+   "rankedDate": "2016-10-20",
+   "playCount": 1103845,
+   "favouriteCount": 390,
+   "source": "BMS",
+   "difficultyCount": 9,
+   "hardest": {
+    "name": "Moment",
+    "stars": 6.73,
+    "bpm": 190,
+    "lengthSeconds": 125
+   }
+  },
+  {
+   "id": 476691,
+   "artist": "DJ OKAWARI",
+   "title": "Flower Dance",
+   "creator": "Narcissu",
+   "creatorId": 1826598,
+   "status": "ranked",
+   "rankedDate": "2016-09-14",
+   "playCount": 15701286,
+   "favouriteCount": 10467,
+   "source": "",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "Camellia",
+    "stars": 5.05,
+    "bpm": 100,
+    "lengthSeconds": 241
+   }
+  },
+  {
+   "id": 499488,
+   "artist": "Kana Nishino",
+   "title": "Sweet Dreams (11t dnb mix)",
+   "creator": "Ascendance",
+   "creatorId": 2931883,
+   "status": "ranked",
+   "rankedDate": "2017-01-05",
+   "playCount": 3510580,
+   "favouriteCount": 2229,
+   "source": "",
+   "difficultyCount": 17,
+   "hardest": {
+    "name": "Smoothie World's Extra",
+    "stars": 6.23,
+    "bpm": 175,
+    "lengthSeconds": 149
+   }
+  },
+  {
+   "id": 504171,
+   "artist": "Yunomi",
+   "title": "Wakusei Rabbit (feat. TORIENA)",
+   "creator": "Nathan",
+   "creatorId": 4785223,
+   "status": "ranked",
+   "rankedDate": "2017-02-12",
+   "playCount": 5075849,
+   "favouriteCount": 2979,
+   "source": "",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "PYON",
+    "stars": 6.02,
+    "bpm": 174,
+    "lengthSeconds": 200
+   }
+  },
+  {
+   "id": 517474,
+   "artist": "Camellia",
+   "title": "Exit This Earth's Atomosphere",
+   "creator": "rrtyui",
+   "creatorId": 352328,
+   "status": "ranked",
+   "rankedDate": "2016-11-09",
+   "playCount": 1327251,
+   "favouriteCount": 2778,
+   "source": "",
+   "difficultyCount": 1,
+   "hardest": {
+    "name": "Evolution",
+    "stars": 7.77,
+    "bpm": 170,
+    "lengthSeconds": 329
+   }
+  },
+  {
+   "id": 522857,
+   "artist": "Porter Robinson & Madeon",
+   "title": "Shelter",
+   "creator": "Monstrata",
+   "creatorId": 2706438,
+   "status": "ranked",
+   "rankedDate": "2016-12-04",
+   "playCount": 10549615,
+   "favouriteCount": 12732,
+   "source": "Shelter",
+   "difficultyCount": 11,
+   "hardest": {
+    "name": "Kibb's Extra",
+    "stars": 6.01,
+    "bpm": 100,
+    "lengthSeconds": 328
+   }
+  },
+  {
+   "id": 558694,
+   "artist": "xi",
+   "title": "Glorious Crown",
+   "creator": "Monstrata",
+   "creatorId": 2706438,
+   "status": "ranked",
+   "rankedDate": "2017-07-08",
+   "playCount": 5060025,
+   "favouriteCount": 1523,
+   "source": "maimai PiNK",
+   "difficultyCount": 7,
+   "hardest": {
+    "name": "FOUR DIMENSIONS",
+    "stars": 8.39,
+    "bpm": 225.5,
+    "lengthSeconds": 118
+   }
+  },
+  {
+   "id": 559097,
+   "artist": "Sota Fujimori",
+   "title": "polygon",
+   "creator": "Kaifin",
+   "creatorId": 2596942,
+   "status": "ranked",
+   "rankedDate": "2018-01-21",
+   "playCount": 3355758,
+   "favouriteCount": 1186,
+   "source": "jubeat copious",
+   "difficultyCount": 11,
+   "hardest": {
+    "name": "Bonzi's Ultra",
+    "stars": 8.63,
+    "bpm": 174,
+    "lengthSeconds": 114
+   }
+  },
+  {
+   "id": 594429,
+   "artist": "Kenshi Yonezu",
+   "title": "Peace Sign (TV edit.)",
+   "creator": "Finshie",
+   "creatorId": 2018960,
+   "status": "ranked",
+   "rankedDate": "2017-07-21",
+   "playCount": 30550270,
+   "favouriteCount": 16026,
+   "source": "僕のヒーローアカデミア 第2期",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "Plus Ultra",
+    "stars": 5.56,
+    "bpm": 200,
+    "lengthSeconds": 90
+   }
+  },
+  {
+   "id": 611956,
+   "artist": "Cartoon",
+   "title": "Why We Lose (ft. Coleman Trapp)",
+   "creator": "Plaudible",
+   "creatorId": 7149815,
+   "status": "ranked",
+   "rankedDate": "2017-11-24",
+   "playCount": 14052303,
+   "favouriteCount": 8296,
+   "source": "",
+   "difficultyCount": 6,
+   "hardest": {
+    "name": "Broken",
+    "stars": 5.22,
+    "bpm": 175,
+    "lengthSeconds": 131
+   }
+  },
+  {
+   "id": 626406,
+   "artist": "MISATO",
+   "title": "Necro Fantasia",
+   "creator": "WORSTPOLACKEU",
+   "creatorId": 2686293,
+   "status": "ranked",
+   "rankedDate": "2018-11-19",
+   "playCount": 5785182,
+   "favouriteCount": 1866,
+   "source": "東方妖々夢　～ Perfect Cherry Blossom.",
+   "difficultyCount": 7,
+   "hardest": {
+    "name": "Sakura no Yume",
+    "stars": 5.87,
+    "bpm": 175,
+    "lengthSeconds": 167
+   }
+  },
+  {
+   "id": 634147,
+   "artist": "Kaneko Chiharu",
+   "title": "iLLness LiLin",
+   "creator": "Kroytz",
+   "creatorId": 2339768,
+   "status": "ranked",
+   "rankedDate": "2018-01-24",
+   "playCount": 1365219,
+   "favouriteCount": 598,
+   "source": "SOUND VOLTEX IV HEAVENLY HAVEN",
+   "difficultyCount": 9,
+   "hardest": {
+    "name": "TERMiNALLY iLL",
+    "stars": 9.92,
+    "bpm": 280,
+    "lengthSeconds": 118
+   }
+  },
+  {
+   "id": 658008,
+   "artist": "wowaka",
+   "title": "Unknown Mother-Goose feat. Hatsune Miku",
+   "creator": "tutuhaha",
+   "creatorId": 546991,
+   "status": "ranked",
+   "rankedDate": "2018-01-02",
+   "playCount": 1725678,
+   "favouriteCount": 3020,
+   "source": "",
+   "difficultyCount": 7,
+   "hardest": {
+    "name": "Extra",
+    "stars": 5.63,
+    "bpm": 222,
+    "lengthSeconds": 133
+   }
+  },
+  {
+   "id": 660630,
+   "artist": "Ocelot",
+   "title": "KAEDE",
+   "creator": "Hollow Wings",
+   "creatorId": 416662,
+   "status": "ranked",
+   "rankedDate": "2018-02-24",
+   "playCount": 1107765,
+   "favouriteCount": 713,
+   "source": "",
+   "difficultyCount": 11,
+   "hardest": {
+    "name": "EX EX",
+    "stars": 7.91,
+    "bpm": 177,
+    "lengthSeconds": 198
+   }
+  },
+  {
+   "id": 801862,
+   "artist": "cYsmix",
+   "title": "Escapism",
+   "creator": "Bonzi",
+   "creatorId": 1313969,
+   "status": "ranked",
+   "rankedDate": "2024-04-09",
+   "playCount": 132360,
+   "favouriteCount": 456,
+   "source": "",
+   "difficultyCount": 6,
+   "hardest": {
+    "name": "(#1) Insane",
+    "stars": 5.14,
+    "bpm": 128,
+    "lengthSeconds": 157
+   }
+  },
+  {
+   "id": 833895,
+   "artist": "t+pazolite",
+   "title": "Oshama Scramble!",
+   "creator": "Nowaie",
+   "creatorId": 5428909,
+   "status": "ranked",
+   "rankedDate": "2019-05-11",
+   "playCount": 4923711,
+   "favouriteCount": 2512,
+   "source": "maimai ORANGE PLUS",
+   "difficultyCount": 12,
+   "hardest": {
+    "name": "Re:MASTER",
+    "stars": 6.98,
+    "bpm": 190,
+    "lengthSeconds": 116
+   }
+  },
+  {
+   "id": 842412,
+   "artist": "Will Stetson",
+   "title": "Harumachi Clover (Swing Arrangement) [Dictate Edit]",
+   "creator": "Sotarks",
+   "creatorId": 4452992,
+   "status": "ranked",
+   "rankedDate": "2018-09-18",
+   "playCount": 119996775,
+   "favouriteCount": 22332,
+   "source": "OneRoom",
+   "difficultyCount": 8,
+   "hardest": {
+    "name": "Oh no!",
+    "stars": 5.13,
+    "bpm": 170,
+    "lengthSeconds": 30
+   }
+  },
+  {
+   "id": 861466,
+   "artist": "Yonezu Kenshi",
+   "title": "Lemon",
+   "creator": "Loneight",
+   "creatorId": 663131,
+   "status": "ranked",
+   "rankedDate": "2018-12-11",
+   "playCount": 3379068,
+   "favouriteCount": 5533,
+   "source": "アンナチュラル",
+   "difficultyCount": 2,
+   "hardest": {
+    "name": "Yume",
+    "stars": 3.81,
+    "bpm": 87,
+    "lengthSeconds": 249
+   }
+  },
+  {
+   "id": 863227,
+   "artist": "Brian The Sun",
+   "title": "Lonely Go! (TV Size)",
+   "creator": "Nevo",
+   "creatorId": 7451883,
+   "status": "ranked",
+   "rankedDate": "2018-12-19",
+   "playCount": 24343776,
+   "favouriteCount": 3223,
+   "source": "BORUTO-ボルト-NARUTO NEXT GENERATIONS",
+   "difficultyCount": 10,
+   "hardest": {
+    "name": "Jougan",
+    "stars": 6.67,
+    "bpm": 204,
+    "lengthSeconds": 89
+   }
+  },
+  {
+   "id": 889855,
+   "artist": "GALNERYUS",
+   "title": "RAISE MY SWORD",
+   "creator": "Sotarks",
+   "creatorId": 4452992,
+   "status": "ranked",
+   "rankedDate": "2018-12-29",
+   "playCount": 3372246,
+   "favouriteCount": 2875,
+   "source": "",
+   "difficultyCount": 1,
+   "hardest": {
+    "name": "A THOUSAND FLAMES",
+    "stars": 7.7,
+    "bpm": 184,
+    "lengthSeconds": 422
+   }
+  },
+  {
+   "id": 917915,
+   "artist": "Silentroom",
+   "title": "Nhelv",
+   "creator": "Nyxa",
+   "creatorId": 3408126,
+   "status": "ranked",
+   "rankedDate": "2019-12-08",
+   "playCount": 1134684,
+   "favouriteCount": 1456,
+   "source": "Arcaea",
+   "difficultyCount": 9,
+   "hardest": {
+    "name": "iniquitatem",
+    "stars": 7.06,
+    "bpm": 174.58,
+    "lengthSeconds": 156
+   }
+  },
+  {
+   "id": 968656,
+   "artist": "xi",
+   "title": "Ascension to Heaven",
+   "creator": "-Tynamo",
+   "creatorId": 3638962,
+   "status": "ranked",
+   "rankedDate": "2021-03-30",
+   "playCount": 5658316,
+   "favouriteCount": 3201,
+   "source": "",
+   "difficultyCount": 7,
+   "hardest": {
+    "name": "FINAL DIMENSION",
+    "stars": 6.8,
+    "bpm": 200,
+    "lengthSeconds": 155
+   }
+  },
+  {
+   "id": 979887,
+   "artist": "Teminite & MDK",
+   "title": "Space Invaders",
+   "creator": "Ciyus Miapah",
+   "creatorId": 2805457,
+   "status": "ranked",
+   "rankedDate": "2019-08-07",
+   "playCount": 4598649,
+   "favouriteCount": 4583,
+   "source": "",
+   "difficultyCount": 4,
+   "hardest": {
+    "name": "Dimensional Virtual Arcade",
+    "stars": 7.78,
+    "bpm": 128,
+    "lengthSeconds": 348
+   }
+  },
+  {
+   "id": 985066,
+   "artist": "Yorushika",
+   "title": "Itte.",
+   "creator": "ac8129464363",
+   "creatorId": 3513559,
+   "status": "ranked",
+   "rankedDate": "2019-06-19",
+   "playCount": 3312909,
+   "favouriteCount": 4676,
+   "source": "",
+   "difficultyCount": 3,
+   "hardest": {
+    "name": "Clearly",
+    "stars": 5.1,
+    "bpm": 180,
+    "lengthSeconds": 239
+   }
+  },
+  {
+   "id": 990035,
+   "artist": "Feryquitous",
+   "title": "Quon",
+   "creator": "Aoinabi",
+   "creatorId": 10120527,
+   "status": "ranked",
+   "rankedDate": "2019-10-15",
+   "playCount": 246321,
+   "favouriteCount": 253,
+   "source": "Lanota",
+   "difficultyCount": 6,
+   "hardest": {
+    "name": "Cub's Aethereal Extra",
+    "stars": 6.3,
+    "bpm": 189,
+    "lengthSeconds": 138
+   }
+  },
+  {
+   "id": 999645,
+   "artist": "Mrs. GREEN APPLE",
+   "title": "Inferno (TV Size)",
+   "creator": "Amandia",
+   "creatorId": 11480447,
+   "status": "ranked",
+   "rankedDate": "2019-07-24",
+   "playCount": 57511944,
+   "favouriteCount": 38259,
+   "source": "炎炎ノ消防隊",
+   "difficultyCount": 6,
+   "hardest": {
+    "name": "Fire Force",
+    "stars": 4.87,
+    "bpm": 185,
+    "lengthSeconds": 89
+   }
+  },
+  {
+   "id": 1009031,
+   "artist": "Camellia",
+   "title": "Tojita Sekai",
+   "creator": "Mir",
+   "creatorId": 8688812,
+   "status": "ranked",
+   "rankedDate": "2019-08-17",
+   "playCount": 84798,
+   "favouriteCount": 256,
+   "source": "",
+   "difficultyCount": 1,
+   "hardest": {
+    "name": "Caged Reality",
+    "stars": 7.34,
+    "bpm": 205,
+    "lengthSeconds": 398
+   }
+  },
+  {
+   "id": 1025171,
+   "artist": "LiSA",
+   "title": "Gurenge",
+   "creator": "Crissa",
+   "creatorId": 5405836,
+   "status": "ranked",
+   "rankedDate": "2019-09-25",
+   "playCount": 14588613,
+   "favouriteCount": 25674,
+   "source": "鬼滅の刃",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "Dance of the Fire God",
+    "stars": 6.69,
+    "bpm": 135,
+    "lengthSeconds": 232
+   }
+  },
+  {
+   "id": 1081920,
+   "artist": "Camellia",
+   "title": "introduction - INSANE INFLAME",
+   "creator": "Cris-",
+   "creatorId": 6175280,
+   "status": "ranked",
+   "rankedDate": "2020-04-11",
+   "playCount": 669744,
+   "favouriteCount": 402,
+   "source": "",
+   "difficultyCount": 7,
+   "hardest": {
+    "name": "Ready to Start a War",
+    "stars": 6,
+    "bpm": 172,
+    "lengthSeconds": 118
+   }
+  },
+  {
+   "id": 1174505,
+   "artist": "The Cab",
+   "title": "Angel With A Shotgun (Sped Up Ver.)",
+   "creator": "Sotarks",
+   "creatorId": 4452992,
+   "status": "ranked",
+   "rankedDate": "2020-07-29",
+   "playCount": 23287491,
+   "favouriteCount": 3508,
+   "source": "",
+   "difficultyCount": 15,
+   "hardest": {
+    "name": "A r M i N's Extra",
+    "stars": 4.59,
+    "bpm": 142.56,
+    "lengthSeconds": 88
+   }
+  },
+  {
+   "id": 1192164,
+   "artist": "Mili",
+   "title": "String Theocracy",
+   "creator": "Ayayano",
+   "creatorId": 13869387,
+   "status": "ranked",
+   "rankedDate": "2020-11-14",
+   "playCount": 1094648,
+   "favouriteCount": 2846,
+   "source": "Library Of Ruina",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "Theatrically Interesting",
+    "stars": 5.9,
+    "bpm": 232,
+    "lengthSeconds": 162
+   }
+  },
+  {
+   "id": 1209920,
+   "artist": "Ryokuoushoku Shakai",
+   "title": "Mela!",
+   "creator": "Battle",
+   "creatorId": 4037545,
+   "status": "ranked",
+   "rankedDate": "2021-01-18",
+   "playCount": 563323,
+   "favouriteCount": 584,
+   "source": "",
+   "difficultyCount": 4,
+   "hardest": {
+    "name": "Hero!",
+    "stars": 5.81,
+    "bpm": 138,
+    "lengthSeconds": 239
+   }
+  },
+  {
+   "id": 1218852,
+   "artist": "YOASOBI",
+   "title": "Yoru ni Kakeru",
+   "creator": "CoLouRed GlaZeE",
+   "creatorId": 3189514,
+   "status": "ranked",
+   "rankedDate": "2020-09-07",
+   "playCount": 26655089,
+   "favouriteCount": 29575,
+   "source": "",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "Moonlight Shadow",
+    "stars": 6.75,
+    "bpm": 130,
+    "lengthSeconds": 243
+   }
+  },
+  {
+   "id": 1270438,
+   "artist": "Eve",
+   "title": "Kaikai Kitan (TV Size)",
+   "creator": "necofart",
+   "creatorId": 11038155,
+   "status": "ranked",
+   "rankedDate": "2020-10-13",
+   "playCount": 22891352,
+   "favouriteCount": 20768,
+   "source": "呪術廻戦",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "Curse",
+    "stars": 5.89,
+    "bpm": 185,
+    "lengthSeconds": 86
+   }
+  },
+  {
+   "id": 1322727,
+   "artist": "Ado",
+   "title": "USSEEWA",
+   "creator": "Ryuusei Aika",
+   "creatorId": 7777875,
+   "status": "ranked",
+   "rankedDate": "2021-04-04",
+   "playCount": 12217894,
+   "favouriteCount": 25257,
+   "source": "",
+   "difficultyCount": 7,
+   "hardest": {
+    "name": "?",
+    "stars": 7.76,
+    "bpm": 178,
+    "lengthSeconds": 190
+   }
+  },
+  {
+   "id": 1364626,
+   "artist": "LeaF",
+   "title": "Aleph-0",
+   "creator": "Reywateil",
+   "creatorId": 9828042,
+   "status": "ranked",
+   "rankedDate": "2021-07-24",
+   "playCount": 364883,
+   "favouriteCount": 518,
+   "source": "",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "{NULL:TEMP_TATION}",
+    "stars": 7.3,
+    "bpm": 250,
+    "lengthSeconds": 125
+   }
+  },
+  {
+   "id": 1372002,
+   "artist": "Frums",
+   "title": "Credits",
+   "creator": "s0m3guy",
+   "creatorId": 11141924,
+   "status": "ranked",
+   "rankedDate": "2021-12-05",
+   "playCount": 256794,
+   "favouriteCount": 501,
+   "source": "大血戦 -THE BMS OF FIGHTERS ULTIMATE-",
+   "difficultyCount": 6,
+   "hardest": {
+    "name": "This is PBS.",
+    "stars": 5.78,
+    "bpm": 179,
+    "lengthSeconds": 97
+   }
+  },
+  {
+   "id": 1438177,
+   "artist": "Camellia",
+   "title": "GHOST (2020 Halloween+++++++++ VIP)",
+   "creator": "hifu",
+   "creatorId": 11843685,
+   "status": "ranked",
+   "rankedDate": "2021-05-05",
+   "playCount": 309394,
+   "favouriteCount": 800,
+   "source": "",
+   "difficultyCount": 1,
+   "hardest": {
+    "name": "Extra+++++++++",
+    "stars": 8.7,
+    "bpm": 230,
+    "lengthSeconds": 320
+   }
+  },
+  {
+   "id": 1465787,
+   "artist": "The Koxx",
+   "title": "A Fool Moon Night",
+   "creator": "Le Mirai",
+   "creatorId": 13646997,
+   "status": "ranked",
+   "rankedDate": "2021-10-25",
+   "playCount": 441715,
+   "favouriteCount": 564,
+   "source": "",
+   "difficultyCount": 4,
+   "hardest": {
+    "name": "Kujinn's Escapism",
+    "stars": 5.03,
+    "bpm": 138,
+    "lengthSeconds": 266
+   }
+  },
+  {
+   "id": 1597526,
+   "artist": "Hoshimachi Suisei",
+   "title": "Stellar Stellar",
+   "creator": "Amateurre",
+   "creatorId": 7326908,
+   "status": "ranked",
+   "rankedDate": "2022-06-20",
+   "playCount": 860477,
+   "favouriteCount": 2162,
+   "source": "",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "Shooting Star",
+    "stars": 6.55,
+    "bpm": 178,
+    "lengthSeconds": 287
+   }
+  },
+  {
+   "id": 1718667,
+   "artist": "Eve",
+   "title": "Dramaturgy",
+   "creator": "elicz1",
+   "creatorId": 8039342,
+   "status": "ranked",
+   "rankedDate": "2022-04-02",
+   "playCount": 1521340,
+   "favouriteCount": 3023,
+   "source": "",
+   "difficultyCount": 7,
+   "hardest": {
+    "name": "Encore",
+    "stars": 5.88,
+    "bpm": 149,
+    "lengthSeconds": 235
+   }
+  },
+  {
+   "id": 1753342,
+   "artist": "Snail's House",
+   "title": "Pixel Galaxy",
+   "creator": "bebe",
+   "creatorId": 5057420,
+   "status": "ranked",
+   "rankedDate": "2022-11-06",
+   "playCount": 146083,
+   "favouriteCount": 381,
+   "source": "太鼓の達人 Nintendo Switchば～じょん！",
+   "difficultyCount": 4,
+   "hardest": {
+    "name": "Adventure",
+    "stars": 4.93,
+    "bpm": 150,
+    "lengthSeconds": 143
+   }
+  },
+  {
+   "id": 1780135,
+   "artist": "UNDEAD CORPORATION",
+   "title": "The Empress",
+   "creator": "Daycore",
+   "creatorId": 5596337,
+   "status": "ranked",
+   "rankedDate": "2024-02-08",
+   "playCount": 933479,
+   "favouriteCount": 1452,
+   "source": "東方紅魔郷　～ the Embodiment of Scarlet Devil.",
+   "difficultyCount": 8,
+   "hardest": {
+    "name": "Bloodhunt",
+    "stars": 9.83,
+    "bpm": 270,
+    "lengthSeconds": 259
+   }
+  },
+  {
+   "id": 1864346,
+   "artist": "Kenshi Yonezu",
+   "title": "KICK BACK (TV Size)",
+   "creator": "Kujinn",
+   "creatorId": 3723568,
+   "status": "ranked",
+   "rankedDate": "2022-10-19",
+   "playCount": 6060965,
+   "favouriteCount": 6886,
+   "source": "チェンソーマン",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "Devil Hunter",
+    "stars": 5.84,
+    "bpm": 204,
+    "lengthSeconds": 85
+   }
+  },
+  {
+   "id": 1910654,
+   "artist": "Laur",
+   "title": "Sound Chimera",
+   "creator": "Down",
+   "creatorId": 4694602,
+   "status": "ranked",
+   "rankedDate": "2023-02-18",
+   "playCount": 119620,
+   "favouriteCount": 251,
+   "source": "",
+   "difficultyCount": 1,
+   "hardest": {
+    "name": "Chimera",
+    "stars": 7.95,
+    "bpm": 190,
+    "lengthSeconds": 299
+   }
+  },
+  {
+   "id": 1973430,
+   "artist": "YOASOBI",
+   "title": "Idol (TV Size)",
+   "creator": "ni[hao]lou",
+   "creatorId": 26232141,
+   "status": "ranked",
+   "rankedDate": "2023-04-19",
+   "playCount": 9319163,
+   "favouriteCount": 12500,
+   "source": "【推しの子】",
+   "difficultyCount": 5,
+   "hardest": {
+    "name": "Vanya's Reincarnation",
+    "stars": 5.19,
+    "bpm": 166,
+    "lengthSeconds": 89
+   }
+  },
+  {
+   "id": 2294338,
+   "artist": "Hiiragi Magnetite",
+   "title": "Tetoris",
+   "creator": "Flins",
+   "creatorId": 11119539,
+   "status": "ranked",
+   "rankedDate": "2025-01-08",
+   "playCount": 2654359,
+   "favouriteCount": 4977,
+   "source": "Tetris",
+   "difficultyCount": 7,
+   "hardest": {
+    "name": "Why",
+    "stars": 6,
+    "bpm": 170,
+    "lengthSeconds": 140
+   }
+  },
+  {
+   "id": 2412257,
+   "artist": "Kurokotei",
+   "title": "Galaxy Collapse",
+   "creator": "Ilay",
+   "creatorId": 9005293,
+   "status": "ranked",
+   "rankedDate": "2026-06-29",
+   "playCount": 22062,
+   "favouriteCount": 156,
+   "source": "東方星蓮船　～ Undefined Fantastic Object.",
+   "difficultyCount": 1,
+   "hardest": {
+    "name": "Calamity",
+    "stars": 9.79,
+    "bpm": 270,
+    "lengthSeconds": 353
+   }
+  }
+ ],
+ "mappers": [
+  {
+   "id": 602,
+   "username": "Hitoshirenu Shourai",
+   "countryCode": "US",
+   "countryName": "United States",
+   "previousUsernames": [],
+   "joinedYear": 2007,
+   "mappingFollowers": 77
+  },
+  {
+   "id": 2363,
+   "username": "DJPop",
+   "countryCode": "TH",
+   "countryName": "Thailand",
+   "previousUsernames": [],
+   "joinedYear": 2007,
+   "mappingFollowers": 652
+  },
+  {
+   "id": 5728,
+   "username": "James",
+   "countryCode": "PH",
+   "countryName": "Philippines",
+   "previousUsernames": [],
+   "joinedYear": 2008,
+   "mappingFollowers": 155
+  },
+  {
+   "id": 12328,
+   "username": "Larto",
+   "countryCode": "DE",
+   "countryName": "Germany",
+   "previousUsernames": [],
+   "joinedYear": 2008,
+   "mappingFollowers": 105
+  },
+  {
+   "id": 19048,
+   "username": "Blue Dragon",
+   "countryCode": "BR",
+   "countryName": "Brazil",
+   "previousUsernames": [
+    "Mismagius",
+    "Froslass"
+   ],
+   "joinedYear": 2008,
+   "mappingFollowers": 2508
+  },
+  {
+   "id": 33599,
+   "username": "Andrea",
+   "countryCode": "IT",
+   "countryName": "Italy",
+   "previousUsernames": [
+    "osuplayer111"
+   ],
+   "joinedYear": 2008,
+   "mappingFollowers": 1678
+  },
+  {
+   "id": 41481,
+   "username": "Mashley",
+   "countryCode": "GB",
+   "countryName": "United Kingdom",
+   "previousUsernames": [
+    "Agent Spin Here"
+   ],
+   "joinedYear": 2008,
+   "mappingFollowers": 54
+  },
+  {
+   "id": 53378,
+   "username": "ktgster",
+   "countryCode": "CA",
+   "countryName": "Canada",
+   "previousUsernames": [],
+   "joinedYear": 2008,
+   "mappingFollowers": 1611
+  },
+  {
+   "id": 87065,
+   "username": "Nakagawa-Kanon",
+   "countryCode": "KR",
+   "countryName": "South Korea",
+   "previousUsernames": [
+    "dksslqj"
+   ],
+   "joinedYear": 2009,
+   "mappingFollowers": 338
+  },
+  {
+   "id": 134572,
+   "username": "Kite",
+   "countryCode": "DE",
+   "countryName": "Germany",
+   "previousUsernames": [
+    "-_Kite_-"
+   ],
+   "joinedYear": 2009,
+   "mappingFollowers": 325
+  },
+  {
+   "id": 139493,
+   "username": "ouranhshc",
+   "countryCode": "US",
+   "countryName": "United States",
+   "previousUsernames": [],
+   "joinedYear": 2009,
+   "mappingFollowers": 52
+  },
+  {
+   "id": 186243,
+   "username": "Louis Cyphre",
+   "countryCode": "RU",
+   "countryName": "Russian Federation",
+   "previousUsernames": [],
+   "joinedYear": 2009,
+   "mappingFollowers": 137
+  },
+  {
+   "id": 284905,
+   "username": "Ekoro",
+   "countryCode": "FR",
+   "countryName": "France",
+   "previousUsernames": [],
+   "joinedYear": 2010,
+   "mappingFollowers": 1166
+  },
+  {
+   "id": 345422,
+   "username": "Hakeru",
+   "countryCode": "ID",
+   "countryName": "Indonesia",
+   "previousUsernames": [],
+   "joinedYear": 2010,
+   "mappingFollowers": 6
+  },
+  {
+   "id": 352328,
+   "username": "rrtyui",
+   "countryCode": "JP",
+   "countryName": "Japan",
+   "previousUsernames": [],
+   "joinedYear": 2010,
+   "mappingFollowers": 1495
+  },
+  {
+   "id": 416662,
+   "username": "Hollow Wings",
+   "countryCode": "CN",
+   "countryName": "China",
+   "previousUsernames": [
+    "fwzxzh"
+   ],
+   "joinedYear": 2010,
+   "mappingFollowers": 1804
+  },
+  {
+   "id": 546991,
+   "username": "tutuhaha",
+   "countryCode": "US",
+   "countryName": "United States",
+   "previousUsernames": [],
+   "joinedYear": 2010,
+   "mappingFollowers": 277
+  },
+  {
+   "id": 640611,
+   "username": "Kyshiro",
+   "countryCode": "NL",
+   "countryName": "Netherlands",
+   "previousUsernames": [],
+   "joinedYear": 2011,
+   "mappingFollowers": 271
+  },
+  {
+   "id": 663131,
+   "username": "Loneight",
+   "countryCode": "TW",
+   "countryName": "Taiwan",
+   "previousUsernames": [
+    "l1106188"
+   ],
+   "joinedYear": 2011,
+   "mappingFollowers": 105
+  },
+  {
+   "id": 867259,
+   "username": "Scorpiour",
+   "countryCode": "NZ",
+   "countryName": "New Zealand",
+   "previousUsernames": [],
+   "joinedYear": 2011,
+   "mappingFollowers": 117
+  },
+  {
+   "id": 869782,
+   "username": "alacat",
+   "countryCode": "JP",
+   "countryName": "Japan",
+   "previousUsernames": [],
+   "joinedYear": 2011,
+   "mappingFollowers": 326
+  },
+  {
+   "id": 870067,
+   "username": "Kuria",
+   "countryCode": "ID",
+   "countryName": "Indonesia",
+   "previousUsernames": [
+    "ShinKuria"
+   ],
+   "joinedYear": 2011,
+   "mappingFollowers": 68
+  },
+  {
+   "id": 870584,
+   "username": "Mirage",
+   "countryCode": "IT",
+   "countryName": "Italy",
+   "previousUsernames": [
+    "xMadness"
+   ],
+   "joinedYear": 2011,
+   "mappingFollowers": 33
+  },
+  {
+   "id": 899031,
+   "username": "Lami",
+   "countryCode": "KR",
+   "countryName": "South Korea",
+   "previousUsernames": [
+    "intoon"
+   ],
+   "joinedYear": 2011,
+   "mappingFollowers": 357
+  },
+  {
+   "id": 959763,
+   "username": "Flask",
+   "countryCode": "TW",
+   "countryName": "Taiwan",
+   "previousUsernames": [
+    "ay6859"
+   ],
+   "joinedYear": 2011,
+   "mappingFollowers": 487
+  },
+  {
+   "id": 1313969,
+   "username": "Bonzi",
+   "countryCode": "IT",
+   "countryName": "Italy",
+   "previousUsernames": [
+    "ThEBonzi"
+   ],
+   "joinedYear": 2012,
+   "mappingFollowers": 130
+  },
+  {
+   "id": 1380253,
+   "username": "Awaken",
+   "countryCode": "CN",
+   "countryName": "China",
+   "previousUsernames": [
+    "ZHAIMEJS"
+   ],
+   "joinedYear": 2012,
+   "mappingFollowers": 176
+  },
+  {
+   "id": 1715720,
+   "username": "Asphyxia",
+   "countryCode": "FI",
+   "countryName": "Finland",
+   "previousUsernames": [
+    "To-Jiu-Kun"
+   ],
+   "joinedYear": 2012,
+   "mappingFollowers": 1110
+  },
+  {
+   "id": 1826598,
+   "username": "Narcissu",
+   "countryCode": "CN",
+   "countryName": "China",
+   "previousUsernames": [
+    "zengdaen"
+   ],
+   "joinedYear": 2012,
+   "mappingFollowers": 233
+  },
+  {
+   "id": 1855540,
+   "username": "-Visceral-",
+   "countryCode": "US",
+   "countryName": "United States",
+   "previousUsernames": [
+    "DoYouPlay_Osu",
+    "Smoothie World",
+    "Theaceae"
+   ],
+   "joinedYear": 2012,
+   "mappingFollowers": 69
+  },
+  {
+   "id": 1867171,
+   "username": "Kinomi",
+   "countryCode": "CN",
+   "countryName": "China",
+   "previousUsernames": [
+    "baldrace",
+    "Tsukuyomi"
+   ],
+   "joinedYear": 2012,
+   "mappingFollowers": 104
+  },
+  {
+   "id": 1929729,
+   "username": "kisata",
+   "countryCode": "US",
+   "countryName": "United States",
+   "previousUsernames": [
+    "apaffy"
+   ],
+   "joinedYear": 2012,
+   "mappingFollowers": 51
+  },
+  {
+   "id": 2018960,
+   "username": "Finshie",
+   "countryCode": "PH",
+   "countryName": "Philippines",
+   "previousUsernames": [
+    "FiNSHiE"
+   ],
+   "joinedYear": 2012,
+   "mappingFollowers": 27
+  },
+  {
+   "id": 2128920,
+   "username": "Timorisu",
+   "countryCode": "DE",
+   "countryName": "Germany",
+   "previousUsernames": [],
+   "joinedYear": 2012,
+   "mappingFollowers": 14
+  },
+  {
+   "id": 2155578,
+   "username": "Azer",
+   "countryCode": "CA",
+   "countryName": "Canada",
+   "previousUsernames": [
+    "AzerFrost",
+    "Toy but worse"
+   ],
+   "joinedYear": 2012,
+   "mappingFollowers": 235
+  },
+  {
+   "id": 2279351,
+   "username": "Atsuro",
+   "countryCode": "MX",
+   "countryName": "Mexico",
+   "previousUsernames": [
+    "atsuro0",
+    "Janssen"
+   ],
+   "joinedYear": 2013,
+   "mappingFollowers": 74
+  },
+  {
+   "id": 2339768,
+   "username": "Kroytz",
+   "countryCode": "US",
+   "countryName": "United States",
+   "previousUsernames": [],
+   "joinedYear": 2013,
+   "mappingFollowers": 930
+  },
+  {
+   "id": 2506267,
+   "username": "SnowNiNo_",
+   "countryCode": "TW",
+   "countryName": "Taiwan",
+   "previousUsernames": [
+    "FFM_3R2"
+   ],
+   "joinedYear": 2013,
+   "mappingFollowers": 1174
+  },
+  {
+   "id": 2596942,
+   "username": "Kaifin",
+   "countryCode": "CA",
+   "countryName": "Canada",
+   "previousUsernames": [
+    "EHalina"
+   ],
+   "joinedYear": 2013,
+   "mappingFollowers": 174
+  },
+  {
+   "id": 2686293,
+   "username": "WORSTPOLACKEU",
+   "countryCode": "SE",
+   "countryName": "Sweden",
+   "previousUsernames": [
+    "Komurczak"
+   ],
+   "joinedYear": 2013,
+   "mappingFollowers": 45
+  },
+  {
+   "id": 2706438,
+   "username": "Monstrata",
+   "countryCode": "CA",
+   "countryName": "Canada",
+   "previousUsernames": [
+    "monstrata"
+   ],
+   "joinedYear": 2013,
+   "mappingFollowers": 3945
+  },
+  {
+   "id": 2786413,
+   "username": "Jacob",
+   "countryCode": "US",
+   "countryName": "United States",
+   "previousUsernames": [
+    "Jacob33333"
+   ],
+   "joinedYear": 2013,
+   "mappingFollowers": 11
+  },
+  {
+   "id": 2805457,
+   "username": "Ciyus Miapah",
+   "countryCode": "ID",
+   "countryName": "Indonesia",
+   "previousUsernames": [
+    "CiiyusMiapah",
+    "Fort",
+    "Ciiyus Miapah"
+   ],
+   "joinedYear": 2013,
+   "mappingFollowers": 1526
+  },
+  {
+   "id": 2848604,
+   "username": "toybot",
+   "countryCode": "US",
+   "countryName": "United States",
+   "previousUsernames": [
+    "vikala"
+   ],
+   "joinedYear": 2013,
+   "mappingFollowers": 933
+  },
+  {
+   "id": 2931883,
+   "username": "Ascendance",
+   "countryCode": "US",
+   "countryName": "United States",
+   "previousUsernames": [
+    "TRGTVAscendance"
+   ],
+   "joinedYear": 2013,
+   "mappingFollowers": 230
+  },
+  {
+   "id": 2971837,
+   "username": "Strategas",
+   "countryCode": "LT",
+   "countryName": "Lithuania",
+   "previousUsernames": [],
+   "joinedYear": 2013,
+   "mappingFollowers": 660
+  },
+  {
+   "id": 3117313,
+   "username": "Squigly",
+   "countryCode": "US",
+   "countryName": "United States",
+   "previousUsernames": [
+    "Battlespoon"
+   ],
+   "joinedYear": 2013,
+   "mappingFollowers": 5
+  },
+  {
+   "id": 3178418,
+   "username": "pishifat",
+   "countryCode": "US",
+   "countryName": "United States",
+   "previousUsernames": [],
+   "joinedYear": 2013,
+   "mappingFollowers": 1590
+  },
+  {
+   "id": 3189514,
+   "username": "CoLouRed GlaZeE",
+   "countryCode": "CN",
+   "countryName": "China",
+   "previousUsernames": [],
+   "joinedYear": 2013,
+   "mappingFollowers": 404
+  },
+  {
+   "id": 3250792,
+   "username": "ProfessionalBox",
+   "countryCode": "FI",
+   "countryName": "Finland",
+   "previousUsernames": [],
+   "joinedYear": 2013,
+   "mappingFollowers": 1042
+  },
+  {
+   "id": 3408126,
+   "username": "Nyxa",
+   "countryCode": "NL",
+   "countryName": "Netherlands",
+   "previousUsernames": [
+    "Arnyxa"
+   ],
+   "joinedYear": 2013,
+   "mappingFollowers": 56
+  },
+  {
+   "id": 3513559,
+   "username": "ac8129464363",
+   "countryCode": "CA",
+   "countryName": "Canada",
+   "previousUsernames": [
+    "Whee123",
+    "deetz",
+    "diodex"
+   ],
+   "joinedYear": 2013,
+   "mappingFollowers": 347
+  },
+  {
+   "id": 3620525,
+   "username": "pkk",
+   "countryCode": "CA",
+   "countryName": "Canada",
+   "previousUsernames": [
+    "pkmnyab",
+    "pkuai"
+   ],
+   "joinedYear": 2013,
+   "mappingFollowers": 519
+  },
+  {
+   "id": 3638962,
+   "username": "-Tynamo",
+   "countryCode": "US",
+   "countryName": "United States",
+   "previousUsernames": [
+    "Tynamoguy"
+   ],
+   "joinedYear": 2013,
+   "mappingFollowers": 1354
+  },
+  {
+   "id": 3723568,
+   "username": "Kujinn",
+   "countryCode": "IE",
+   "countryName": "Ireland",
+   "previousUsernames": [
+    "Panda King",
+    "Reform"
+   ],
+   "joinedYear": 2013,
+   "mappingFollowers": 1764
+  },
+  {
+   "id": 4037545,
+   "username": "Battle",
+   "countryCode": "US",
+   "countryName": "United States",
+   "previousUsernames": [
+    "RandomG4mer",
+    "[-Deemo-]"
+   ],
+   "joinedYear": 2014,
+   "mappingFollowers": 245
+  },
+  {
+   "id": 4323406,
+   "username": "VINXIS",
+   "countryCode": "CA",
+   "countryName": "Canada",
+   "previousUsernames": [
+    "Canadian Tire",
+    "Mishima Yurara",
+    "Thanks"
+   ],
+   "joinedYear": 2014,
+   "mappingFollowers": 894
+  },
+  {
+   "id": 4452992,
+   "username": "Sotarks",
+   "countryCode": "FR",
+   "countryName": "France",
+   "previousUsernames": [],
+   "joinedYear": 2014,
+   "mappingFollowers": 15541
+  },
+  {
+   "id": 4561368,
+   "username": "Anxient",
+   "countryCode": "ID",
+   "countryName": "Indonesia",
+   "previousUsernames": [
+    "AncientMU"
+   ],
+   "joinedYear": 2014,
+   "mappingFollowers": 202
+  },
+  {
+   "id": 4610047,
+   "username": "PoNo",
+   "countryCode": "FR",
+   "countryName": "France",
+   "previousUsernames": [
+    "Sydio",
+    "Ponoyoshi"
+   ],
+   "joinedYear": 2014,
+   "mappingFollowers": 323
+  },
+  {
+   "id": 4694602,
+   "username": "Down",
+   "countryCode": "KR",
+   "countryName": "South Korea",
+   "previousUsernames": [
+    "myoung123"
+   ],
+   "joinedYear": 2014,
+   "mappingFollowers": 1024
+  },
+  {
+   "id": 4785223,
+   "username": "Nathan",
+   "countryCode": "US",
+   "countryName": "United States",
+   "previousUsernames": [
+    "sukiNathan"
+   ],
+   "joinedYear": 2014,
+   "mappingFollowers": 2630
+  },
+  {
+   "id": 5057420,
+   "username": "bebe",
+   "countryCode": "TH",
+   "countryName": "Thailand",
+   "previousUsernames": [
+    "GalenTori"
+   ],
+   "joinedYear": 2014,
+   "mappingFollowers": 30
+  },
+  {
+   "id": 5297826,
+   "username": "Astarte",
+   "countryCode": "VN",
+   "countryName": "Vietnam",
+   "previousUsernames": [
+    "thiennguyen209",
+    "Serpentine"
+   ],
+   "joinedYear": 2014,
+   "mappingFollowers": 8
+  },
+  {
+   "id": 5405836,
+   "username": "Crissa",
+   "countryCode": "CL",
+   "countryName": "Chile",
+   "previousUsernames": [
+    "Come to Shadows",
+    "[-Crissaegrim-]",
+    "EuIa",
+    "Eula-"
+   ],
+   "joinedYear": 2014,
+   "mappingFollowers": 494
+  },
+  {
+   "id": 5428909,
+   "username": "Nowaie",
+   "countryCode": "FI",
+   "countryName": "Finland",
+   "previousUsernames": [
+    "Ismo Laitela",
+    "DTM9 Nowa"
+   ],
+   "joinedYear": 2014,
+   "mappingFollowers": 409
+  },
+  {
+   "id": 5596337,
+   "username": "Daycore",
+   "countryCode": "RU",
+   "countryName": "Russian Federation",
+   "previousUsernames": [],
+   "joinedYear": 2015,
+   "mappingFollowers": 638
+  },
+  {
+   "id": 6175280,
+   "username": "Cris-",
+   "countryCode": "CL",
+   "countryName": "Chile",
+   "previousUsernames": [],
+   "joinedYear": 2015,
+   "mappingFollowers": 246
+  },
+  {
+   "id": 7149815,
+   "username": "Plaudible",
+   "countryCode": "US",
+   "countryName": "United States",
+   "previousUsernames": [],
+   "joinedYear": 2015,
+   "mappingFollowers": 312
+  },
+  {
+   "id": 7326908,
+   "username": "Amateurre",
+   "countryCode": "PH",
+   "countryName": "Philippines",
+   "previousUsernames": [],
+   "joinedYear": 2015,
+   "mappingFollowers": 2558
+  },
+  {
+   "id": 7451883,
+   "username": "Nevo",
+   "countryCode": "US",
+   "countryName": "United States",
+   "previousUsernames": [
+    "NevoPlaysGames"
+   ],
+   "joinedYear": 2015,
+   "mappingFollowers": 2033
+  },
+  {
+   "id": 7777875,
+   "username": "Ryuusei Aika",
+   "countryCode": "CN",
+   "countryName": "China",
+   "previousUsernames": [
+    "Neanmoins"
+   ],
+   "joinedYear": 2016,
+   "mappingFollowers": 2628
+  },
+  {
+   "id": 8039342,
+   "username": "elicz1",
+   "countryCode": "AU",
+   "countryName": "Australia",
+   "previousUsernames": [],
+   "joinedYear": 2016,
+   "mappingFollowers": 237
+  },
+  {
+   "id": 8688812,
+   "username": "Mir",
+   "countryCode": "DE",
+   "countryName": "Germany",
+   "previousUsernames": [],
+   "joinedYear": 2016,
+   "mappingFollowers": 2432
+  },
+  {
+   "id": 9005293,
+   "username": "Ilay",
+   "countryCode": "IL",
+   "countryName": "Israel",
+   "previousUsernames": [
+    "Kissmepuppy"
+   ],
+   "joinedYear": 2016,
+   "mappingFollowers": 360
+  },
+  {
+   "id": 9828042,
+   "username": "Reywateil",
+   "countryCode": "SE",
+   "countryName": "Sweden",
+   "previousUsernames": [
+    "stickAcc",
+    "Yooh"
+   ],
+   "joinedYear": 2017,
+   "mappingFollowers": 275
+  },
+  {
+   "id": 10120527,
+   "username": "Aoinabi",
+   "countryCode": "CN",
+   "countryName": "China",
+   "previousUsernames": [
+    "C_Pino",
+    "-[Pino]-"
+   ],
+   "joinedYear": 2017,
+   "mappingFollowers": 221
+  },
+  {
+   "id": 11038155,
+   "username": "necofart",
+   "countryCode": "FR",
+   "countryName": "France",
+   "previousUsernames": [
+    "toonisoop",
+    "so0p",
+    "Kudosu"
+   ],
+   "joinedYear": 2017,
+   "mappingFollowers": 137
+  },
+  {
+   "id": 11119539,
+   "username": "Flins",
+   "countryCode": "BY",
+   "countryName": "Belarus",
+   "previousUsernames": [
+    "AirinCat"
+   ],
+   "joinedYear": 2017,
+   "mappingFollowers": 1410
+  },
+  {
+   "id": 11141924,
+   "username": "s0m3guy",
+   "countryCode": "VN",
+   "countryName": "Vietnam",
+   "previousUsernames": [],
+   "joinedYear": 2017,
+   "mappingFollowers": 20
+  },
+  {
+   "id": 11843685,
+   "username": "hifu",
+   "countryCode": "JP",
+   "countryName": "Japan",
+   "previousUsernames": [],
+   "joinedYear": 2018,
+   "mappingFollowers": 667
+  },
+  {
+   "id": 13646997,
+   "username": "Le Mirai",
+   "countryCode": "DE",
+   "countryName": "Germany",
+   "previousUsernames": [
+    "SirMirai",
+    "Cacturne"
+   ],
+   "joinedYear": 2018,
+   "mappingFollowers": 105
+  },
+  {
+   "id": 13869387,
+   "username": "Ayayano",
+   "countryCode": "US",
+   "countryName": "United States",
+   "previousUsernames": [
+    "TheArcMageYT",
+    "[Arc]",
+    "Kazarii"
+   ],
+   "joinedYear": 2019,
+   "mappingFollowers": 87
+  },
+  {
+   "id": 26232141,
+   "username": "ni[hao]lou",
+   "countryCode": "CA",
+   "countryName": "Canada",
+   "previousUsernames": [
+    "uwuSyndicate69",
+    "owo-chan69",
+    "Syndicate_",
+    "- Nilou -"
+   ],
+   "joinedYear": 2021,
+   "mappingFollowers": 260
+  }
+ ]
+}

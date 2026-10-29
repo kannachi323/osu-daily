@@ -1,0 +1,14 @@
+// Cloudflare Worker that serves the built site as static assets (no server code).
+// Deploy with `npm run deploy` after `npx wrangler@4 login`; see docs/RELEASE_CHECKLIST.md.
+{
+  "$schema": "https://unpkg.com/wrangler@4/config-schema.json",
+  "name": "osu-daily",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    // Deep links like /trivia/3 load index.html; the app routes on the client.
+    "not_found_handling": "single-page-application"
+  }
+  // To use a custom domain, add for example:
+  // "routes": [{ "pattern": "osudaily.example.com", "custom_domain": true }]
+}
