@@ -31,6 +31,51 @@ deployed. Lint, typecheck, tests and the production build pass locally.
    `CLOUDFLARE_ACCOUNT_ID` secrets and a deploy job using
    `cloudflare/wrangler-action@v3`, if you want main to deploy automatically.
 
+## Polish pass (2026-10-28, second round)
+
+Asked for: no gaps, minimal UI, no all-caps or ugly fonts, consistent
+alignment and padding, production ready. Before and after screenshots:
+`docs/screenshots/before/` and `docs/screenshots/` (same file names).
+
+- **Font:** Outfit replaced by Inter (variable, optical sizes, self-hosted).
+  Extra-bold weights are gone; headings are semibold or bold.
+- **No all caps:** removed the letter-spaced "No. 2" eyebrow (now "Puzzle #2"),
+  the uppercase result verdict, the uppercase hint labels and the country-code
+  chip on Mapper clues. A DOM check finds no element with `uppercase` or small
+  caps. Acronyms (BPM, UTC) and names from the data (song and difficulty
+  names) are left as written.
+- **Type and spacing scales:** one documented scale by role and a 4 px
+  spacing grid (`docs/direction.md`); arbitrary font sizes, `text-xs` and odd
+  half-step spacing were removed. The game header, footer and archive notice
+  line up with the game column.
+- **Less text:** the "Play" chip on untouched home tiles is gone (the arrow
+  says it), Mapper clues lost their 01–05 numbering, the footer is two short
+  lines, and Backdrop hints are compact pills instead of a five-box grid.
+- **Answer card:** the whole card is now one link with an arrow icon, so long
+  titles no longer truncate behind a text link on phones.
+- **Gaps filled:**
+  - An error boundary shows "Something broke." with a reload button instead of
+    a blank page.
+  - Future puzzle numbers (`/trivia/99`) are a proper 404 with the site
+    header. The 404 page has a primary button home and its own page title.
+  - When the UTC day rolls over while a game is open, a notice says a new
+    puzzle is out and links to it. The open game keeps its puzzle.
+  - Artwork containers show a placeholder surface while images load or if
+    they fail.
+- **Share image:** `public/og.png` was re-rendered in Inter.
+
+Played start to finish in the browser at 375 px:
+- Trivia scored and shared; the copied text was checked.
+- Backdrop solved after a skip and a wrong guess.
+- Higher or Lower ended on a miss.
+- Mapper failed after five skips.
+- Home showed 4/4 with each game's score.
+- Reopening a finished game shows its result.
+- Archive #1 played without extending the streak; a finish on the day itself
+  did extend it (streak 2).
+- The 404 page and the new-day notice were checked; the rollover was faked in
+  a temporary local edit that was reverted.
+
 ## Decisions made while you were away
 
 - **Stack:** React 19, TypeScript, Vite 7, Tailwind 4, Vitest. No router
@@ -58,6 +103,9 @@ deployed. Lint, typecheck, tests and the production build pass locally.
   and appear in stats but don't extend streaks.
 - **Day boundary:** UTC midnight for everyone. A game open at midnight keeps
   its puzzle until the page is reloaded.
+- **Inter over Outfit** (polish pass): Outfit's extra-bold display cut read
+  as heavy and quirky at small sizes. Inter is neutral, has tabular figures
+  and optical sizes, and costs about 73 KB (Latin subset) of font.
 - **Dark only.** The palette is dark-first; no light theme for v1.
 - **Share text** uses coloured squares (the convention for daily games) and the
   site origin. The UI itself has no emoji.
@@ -67,12 +115,15 @@ deployed. Lint, typecheck, tests and the production build pass locally.
 
 ## Verified here
 
+- Lint, typecheck, 796 Vitest tests and the production build pass after the
+  polish pass. No console errors on any route after a fresh load.
 - 796 Vitest tests: seeding and determinism, UTC rollover across time zones,
   puzzle validity for every day of a year, scoring, streaks, interrupted
   sessions, storage corruption, and the API transform.
 - Played every game end to end in a browser at 375 px and desktop width; no
   console errors; no horizontal overflow at 375 px.
-- axe-core: no violations on all routes and key states.
+- axe-core: no violations on all routes and key states (re-run after the
+  polish pass, including in-progress Backdrop, Trivia and Mapper).
 - Screenshots in `docs/screenshots/` (desktop at 1440 px, mobile at 375 px @2x).
 
 ## Not verified

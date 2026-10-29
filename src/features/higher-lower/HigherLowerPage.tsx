@@ -112,8 +112,8 @@ export function HigherLowerPage({ day, today, isArchive }: GamePageProps) {
           next={isArchive ? { to: '/archive', label: 'Archive' } : nextDestination('higher-lower', day)}
         />
       ) : (
-        <div className="space-y-5">
-          <h2 className="text-[1.75rem] font-bold leading-tight tracking-tight sm:text-3xl">{QUESTIONS[puzzle.stat.key]}</h2>
+        <div className="space-y-6">
+          <h2 className="text-2xl font-semibold leading-tight tracking-tight sm:text-3xl">{QUESTIONS[puzzle.stat.key]}</h2>
           <div key={round} className="grid animate-rise gap-3 sm:grid-cols-2">
             <StatCard set={current} stat={puzzle.stat} showValue tone="neutral" />
             <StatCard set={next} stat={puzzle.stat} showValue={revealing !== null} tone={nextTone} />
@@ -124,7 +124,7 @@ export function HigherLowerPage({ day, today, isArchive }: GamePageProps) {
               disabled={revealing !== null}
               icon={<ArrowUp />}
               aria-keyshortcuts="ArrowUp H"
-              className="min-h-16 text-xl"
+              className="min-h-16"
             >
               Higher
             </Button>
@@ -133,7 +133,7 @@ export function HigherLowerPage({ day, today, isArchive }: GamePageProps) {
               disabled={revealing !== null}
               icon={<ArrowDown />}
               aria-keyshortcuts="ArrowDown L"
-              className="min-h-16 text-xl"
+              className="min-h-16"
             >
               Lower
             </Button>

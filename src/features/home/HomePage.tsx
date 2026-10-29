@@ -30,14 +30,12 @@ export function HomePage({ today }: { today: DayKey }) {
 
   return (
     <div className="mx-auto w-full max-w-6xl px-4 pb-10 sm:px-6">
-      <section aria-labelledby="today-heading" className="pb-6 pt-6 sm:pb-10 sm:pt-12">
-        <p className="tabular text-sm font-semibold uppercase tracking-[0.2em] text-pink-bright">
-          No. {puzzleNumberOf(today)}
-        </p>
-        <h1 id="today-heading" className="mt-2 text-4xl font-extrabold tracking-tight sm:text-6xl">
+      <section aria-labelledby="today-heading" className="pb-8 pt-8 sm:pb-12 sm:pt-12">
+        <p className="tabular text-lg font-medium text-pink-bright">Puzzle #{puzzleNumberOf(today)}</p>
+        <h1 id="today-heading" className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
           {formatDay(today)}
         </h1>
-        <div className="mt-5 flex flex-wrap items-center gap-2.5">
+        <div className="mt-6 flex flex-wrap items-center gap-2">
           <div
             className="flex items-center gap-2 rounded-full bg-surface px-4 py-2 ring-1 ring-line"
             aria-label={`${doneCount} of ${GAMES.length} games played today`}

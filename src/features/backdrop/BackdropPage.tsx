@@ -66,7 +66,7 @@ export function BackdropPage({ day, today, isArchive }: GamePageProps) {
       isArchive={isArchive}
       progress={<Pips marks={marks} current={progress.finished ? undefined : record.state.guesses.length} />}
     >
-      <div className="space-y-5">
+      <div className="space-y-6">
         <MysteryArtwork
           setId={answerId}
           view={artworkView(progress.misses, progress.finished)}

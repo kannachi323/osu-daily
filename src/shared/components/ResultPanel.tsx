@@ -70,18 +70,18 @@ export function ResultPanel(props: ResultPanelProps) {
   ]
 
   return (
-    <section aria-labelledby="result-heading" className="animate-rise space-y-5">
+    <section aria-labelledby="result-heading" className="animate-rise space-y-6">
       <div className="rounded-3xl bg-surface p-6 ring-1 ring-line sm:p-8">
-        <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted">{verdict}</p>
-        <h2 id="result-heading" className="tabular mt-1 text-6xl font-extrabold tracking-tight sm:text-7xl">
+        <p className="text-lg font-medium text-muted">{verdict}</p>
+        <h2 id="result-heading" className="tabular mt-1 text-6xl font-bold tracking-tight">
           {scoreLabel}
         </h2>
-        <ol className="mt-5 flex flex-wrap gap-1.5" aria-label="Result by round">
+        <ol className="mt-6 flex flex-wrap gap-2" aria-label="Result by round">
           {marks.map((mark, index) => (
             <li
               key={index}
               aria-label={`Round ${index + 1}: ${mark === 'hit' ? 'correct' : mark === 'miss' ? 'wrong' : mark === 'skip' ? 'skipped' : 'not played'}`}
-              className={`size-7 rounded-lg animate-pop ${
+              className={`size-8 rounded-lg animate-pop ${
                 mark === 'hit' ? 'bg-hit' : mark === 'miss' ? 'bg-miss' : mark === 'skip' ? 'bg-muted/60' : 'bg-white/10'
               }`}
               style={{ animationDelay: `${index * 50}ms` }}
@@ -103,11 +103,11 @@ export function ResultPanel(props: ResultPanelProps) {
         </p>
       </div>
 
-      <dl className="grid grid-cols-4 gap-2">
+      <dl className="grid grid-cols-4 gap-2 sm:gap-3">
         {statItems.map((item) => (
           <div key={item.label} className="flex flex-col-reverse rounded-2xl bg-surface px-2 py-4 text-center ring-1 ring-line">
-            <dt className="mt-0.5 text-xs text-muted">{item.label}</dt>
-            <dd className="tabular flex items-center justify-center gap-1 text-2xl font-bold">
+            <dt className="mt-1 text-sm text-muted">{item.label}</dt>
+            <dd className="tabular flex items-center justify-center gap-1 text-2xl font-semibold">
               {item.icon}
               {item.value}
             </dd>

@@ -15,10 +15,27 @@ satisfying controls.
   `#ff4f9a` (osu!-adjacent, not osu!'s own value) with dark ink text on it.
   Feedback: mint `#36d68f` for correct, coral `#ff6a5c` for wrong, always
   paired with a check or cross icon. Tokens live in `src/styles.css`.
-- **Type:** one family, Outfit (variable, self-hosted). Extra-bold, tight
-  headings; tabular numerals for scores and countdowns.
-- **Shape:** rounded surfaces (16–28 px), 56–64 px buttons, 44 px minimum touch
-  targets, generous spacing.
+- **Type:** one family, Inter (variable with optical sizes, self-hosted).
+  Sentence case only: no all-caps labels, `uppercase`, small caps or tracked
+  eyebrows. Tabular numerals for scores and countdowns. The scale, by role:
+
+  | Role | Size | Weight |
+  | --- | --- | --- |
+  | Caption, label, footer | `text-sm` | regular / medium |
+  | Body | `text-base` | regular |
+  | Control (buttons, inputs, answers) | `text-lg` | medium / semibold |
+  | Card title, clue value | `text-xl` | semibold |
+  | Prompt, heading | `text-2xl`, `sm:text-3xl` | semibold |
+  | Page title, tile name | `text-3xl` to `sm:text-5xl` | bold |
+  | Score, stat value | `text-4xl` to `text-6xl` | bold |
+
+  No arbitrary sizes (`text-[…]`), no `text-xs`, no extra-bold.
+- **Spacing:** the 4 px grid, using steps 1, 2, 3, 4, 6, 8, 12 and 16
+  (4–64 px). No half steps or 20/28 px. Cards pad 16 px on phones and 24 px
+  from `sm`; stacked sections sit 24 px apart (`space-y-6`).
+- **Shape:** radii are 12 px for thumbnails, 16 px for controls and list
+  cards, 24 px for panels and artwork, full for pills. Buttons are 56–64 px
+  tall; touch targets are at least 44 px.
 - **Artwork first:** home tiles, Trivia subjects, Higher or Lower cards and
   Mapper clues show beatmap artwork under a dark scrim. Backdrop is built
   around the artwork itself.

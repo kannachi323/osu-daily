@@ -6,23 +6,24 @@ interface HintChipsProps {
 
 export function HintChips({ hints, total }: HintChipsProps) {
   return (
-    <ul className="grid grid-cols-2 gap-2 sm:grid-cols-5" aria-label="Hints">
+    <ul className="flex flex-wrap gap-2" aria-label="Hints">
       {Array.from({ length: total }, (_, index) => {
         const hint = hints[index]
         return hint ? (
-          <li key={index} className="animate-pop rounded-2xl bg-surface px-3 py-2.5 ring-1 ring-pink/40">
-            <span className="block text-xs font-medium uppercase tracking-wider text-muted">{hint.label}</span>
-            <span className="block truncate text-base font-semibold">{hint.value}</span>
+          <li
+            key={index}
+            className="flex h-11 min-w-0 max-w-full animate-pop items-baseline gap-2 rounded-full bg-surface px-4 py-3 leading-none ring-1 ring-pink/40"
+          >
+            <span className="shrink-0 text-sm text-muted">{hint.label}</span>
+            <span className="truncate font-semibold">{hint.value}</span>
           </li>
         ) : (
           <li
             key={index}
             aria-label="Locked hint"
-            className="grid place-items-center rounded-2xl border border-dashed border-white/12 px-3 py-2.5 text-muted/70"
+            className="grid size-11 place-items-center rounded-full border border-dashed border-white/15 font-semibold text-muted"
           >
-            <span aria-hidden="true" className="text-xl font-bold leading-[2.75rem]">
-              ?
-            </span>
+            <span aria-hidden="true">?</span>
           </li>
         )
       })}

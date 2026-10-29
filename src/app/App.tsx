@@ -5,9 +5,11 @@ import { HigherLowerPage } from '../features/higher-lower/HigherLowerPage'
 import { HomePage } from '../features/home/HomePage'
 import { MapperPage } from '../features/mapper/MapperPage'
 import { TriviaPage } from '../features/trivia/TriviaPage'
+import { buttonClass } from '../shared/components/buttonClass'
+import { ArrowRight } from '../shared/components/icons'
 import { dayKeyOfPuzzle, puzzleNumberOf, type DayKey } from '../shared/daily/day'
 import { useToday } from '../shared/daily/useToday'
-import { gameById, parseRoute, type GameId, type GamePageProps } from './games'
+import { gameById, parseRoute, type GameId, type GamePageProps, type Route } from './games'
 import { Link } from './Link'
 import { usePathname } from './router'
 import { SiteFooter } from './SiteFooter'
@@ -21,23 +23,56 @@ const GAME_PAGES: Record<GameId, ComponentType<GamePageProps>> = {
 
 const SITE_NAME = 'osu! daily'
 
+/** Future puzzle numbers don't exist yet, so they are a missing page. */
+function resolveRoute(route: Route, today: DayKey): Route {
+  if (route.page === 'game' && route.puzzleNumber !== undefined && route.puzzleNumber > puzzleNumberOf(today)) {
+    return { page: 'not-found' }
+  }
+  return route
+}
+
+function pageTitle(route: Route): string {
+  if (route.page === 'game') return `${gameById(route.gameId).name} · ${SITE_NAME}`
+  if (route.page === 'archive') return `Archive · ${SITE_NAME}`
+  if (route.page === 'not-found') return `Not found · ${SITE_NAME}`
+  return `${SITE_NAME}: daily osu! mini-games`
+}
+
 function GameRoute({ gameId, puzzleNumber, today }: { gameId: GameId; puzzleNumber?: number; today: DayKey }) {
   // Pin the day when the page opens, so a game in progress at midnight isn't swapped out.
   const [openedOn] = useState(today)
   const isArchive = puzzleNumber !== undefined && puzzleNumber < puzzleNumberOf(openedOn)
   const day = isArchive ? dayKeyOfPuzzle(puzzleNumber) : openedOn
   const Page = GAME_PAGES[gameId]
-  if (puzzleNumber !== undefined && puzzleNumber > puzzleNumberOf(openedOn)) return <NotFound />
-  return <Page key={`${gameId}:${day}`} day={day} today={today} isArchive={isArchive} />
+  return (
+    <>
+      <Page key={`${gameId}:${day}`} day={day} today={today} isArchive={isArchive} />
+      {!isArchive && day !== today && <NewPuzzleNotice href={gameById(gameId).path} />}
+    </>
+  )
+}
+
+/** Shown when the UTC day rolls over while a game is open. A full load picks up the new day. */
+function NewPuzzleNotice({ href }: { href: string }) {
+  return (
+    <div role="status" className="fixed inset-x-4 bottom-4 z-40 mx-auto flex max-w-md animate-rise items-center gap-4 rounded-2xl bg-raised p-2 pl-4 shadow-2xl shadow-black/60 ring-1 ring-line">
+      <p className="flex-1 font-medium">A new puzzle is out.</p>
+      <a href={href} className={buttonClass('primary', 'min-h-12 px-4 text-base')}>
+        Play
+        <ArrowRight />
+      </a>
+    </div>
+  )
 }
 
 function NotFound() {
   return (
     <div className="mx-auto max-w-xl px-4 py-24 text-center">
-      <h1 className="text-5xl font-extrabold tracking-tight">Miss.</h1>
-      <p className="mt-3 text-lg text-muted">That page isn’t here.</p>
-      <Link to="/" className="mt-8 inline-block font-semibold text-pink-bright underline-offset-4 hover:underline">
-        Back to today’s games
+      <h1 className="text-5xl font-bold tracking-tight">Miss.</h1>
+      <p className="mt-4 text-lg text-muted">That page isn’t here.</p>
+      <Link to="/" className={buttonClass('primary', 'mt-8')}>
+        Today’s games
+        <ArrowRight />
       </Link>
     </div>
   )
@@ -46,12 +81,12 @@ function NotFound() {
 export function App() {
   const pathname = usePathname()
   const today = useToday()
-  const route = parseRoute(pathname)
+  const route = resolveRoute(parseRoute(pathname), today)
+  const title = pageTitle(route)
 
-  const pageName = route.page === 'game' ? gameById(route.gameId).name : route.page === 'archive' ? 'Archive' : undefined
   useEffect(() => {
-    document.title = pageName ? `${pageName} · ${SITE_NAME}` : `${SITE_NAME}: daily osu! mini-games`
-  }, [pageName])
+    document.title = title
+  }, [title])
 
   return (
     <div className="flex min-h-dvh flex-col">
@@ -68,7 +103,7 @@ export function App() {
         {route.page === 'game' && <GameRoute gameId={route.gameId} puzzleNumber={route.puzzleNumber} today={today} />}
         {route.page === 'not-found' && <NotFound />}
       </main>
-      <SiteFooter />
+      <SiteFooter narrow={route.page === 'game'} />
     </div>
   )
 }
@@ -76,13 +111,13 @@ export function App() {
 function SiteHeader() {
   return (
     <header className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:h-20 sm:px-6">
-      <Link to="/" className="flex items-center gap-2.5 text-xl font-extrabold tracking-tight" aria-label="osu! daily home">
+      <Link to="/" className="flex items-center gap-2 text-xl font-bold tracking-tight" aria-label="osu! daily home">
         <Mark />
         <span>
           osu! <span className="text-pink">daily</span>
         </span>
       </Link>
-      <Link to="/archive" className="rounded-full px-4 py-2 font-semibold text-muted transition-colors hover:bg-white/5 hover:text-fg">
+      <Link to="/archive" className="rounded-full px-4 py-2 font-medium text-muted transition-colors hover:bg-white/5 hover:text-fg">
         Archive
       </Link>
     </header>

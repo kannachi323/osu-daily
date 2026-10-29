@@ -27,8 +27,10 @@
   disclaimer.
 - Do not introduce speculative interfaces, layers, games, or dependencies.
   New games need the owner's go-ahead.
-- Design: dark-first, one type family (Outfit), pink accent, big touch
-  targets, artwork over text. No emoji in UI copy, no gradient blobs. Respect
-  reduced motion. See `docs/direction.md`.
+- Design: dark-first, one type family (Inter), pink accent, big touch
+  targets, artwork over text. Sentence case everywhere: no all-caps text,
+  `uppercase`, small caps or letter-spaced eyebrows. Stick to the type and
+  spacing scales in `docs/direction.md`. No emoji in UI copy, no gradient
+  blobs. Respect reduced motion.
 - Before committing: `npm run lint`, `npm run typecheck`, `npm test`,
   `npm run build`. The dev server uses port 5205.

@@ -1,16 +1,12 @@
 import { dataset } from '../shared/data/dataset'
 
-export function SiteFooter() {
+/** `narrow` lines the footer up with the game column. */
+export function SiteFooter({ narrow = false }: { narrow?: boolean }) {
   return (
-    <footer className="mx-auto w-full max-w-6xl px-4 pb-10 pt-6 text-sm text-muted sm:px-6">
-      <div className="border-t border-line pt-6 leading-relaxed">
-        <p>
-          <strong className="font-semibold text-fg">Unofficial fan project.</strong> Not affiliated with or endorsed by
-          ppy Pty Ltd. Beatmap artwork belongs to its creators and loads from the osu! servers.
-        </p>
-        <p className="mt-1">
-          New puzzles at 00:00 UTC. Data as of {dataset.snapshotDate}. Progress stays in this browser.
-        </p>
+    <footer className={`mx-auto w-full ${narrow ? 'max-w-2xl' : 'max-w-6xl'} px-4 pb-8 pt-8 text-sm leading-relaxed text-muted sm:px-6`}>
+      <div className="space-y-1 border-t border-line pt-6">
+        <p>Unofficial fan project, not affiliated with or endorsed by ppy Pty Ltd. Artwork belongs to its creators.</p>
+        <p>New puzzles at 00:00 UTC · Data from {dataset.snapshotDate}</p>
       </div>
     </footer>
   )

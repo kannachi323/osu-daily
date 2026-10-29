@@ -4,11 +4,11 @@ import { Cross, Skip } from './icons'
 export function GuessList({ labels }: { labels: (string | null)[] }) {
   if (labels.length === 0) return null
   return (
-    <ol className="space-y-1.5" aria-label="Your guesses">
+    <ol className="space-y-2" aria-label="Your guesses">
       {labels.map((label, index) => (
         <li
           key={index}
-          className={`flex animate-rise items-center gap-3 rounded-xl px-4 py-2.5 ring-1 ${
+          className={`flex animate-rise items-center gap-3 rounded-2xl px-4 py-3 ring-1 ${
             label === null ? 'bg-surface text-muted ring-line' : 'bg-miss/10 text-fg ring-miss/40'
           }`}
         >

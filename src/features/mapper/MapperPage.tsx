@@ -66,11 +66,11 @@ export function MapperPage({ day, today, isArchive }: GamePageProps) {
       isArchive={isArchive}
       progress={<Pips marks={marks} current={progress.finished ? undefined : record.state.guesses.length} />}
     >
-      <div className="space-y-5">
+      <div className="space-y-6">
         <MapperHero mapper={puzzle.answer} revealed={progress.finished} />
         <ol className="space-y-2" aria-label="Clues">
-          {clues.map((clue, index) => (
-            <ClueCard key={clue.kind} clue={clue} index={index} />
+          {clues.map((clue) => (
+            <ClueCard key={clue.kind} clue={clue} />
           ))}
         </ol>
         <p role="status" aria-live="polite" className="sr-only">
@@ -93,7 +93,7 @@ export function MapperPage({ day, today, isArchive }: GamePageProps) {
               title={puzzle.answer.username}
               subtitle={songLabel(puzzle.featuredSet)}
               href={userUrl(answerId)}
-              linkLabel="Profile"
+              linkLabel="View profile"
             />
           </ResultPanel>
         ) : (

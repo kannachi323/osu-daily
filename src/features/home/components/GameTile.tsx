@@ -26,7 +26,7 @@ export function GameTile({ game, artworkSetId, glyph, result, inProgress, index 
     <Link
       to={game.path}
       aria-label={`${game.name}: ${game.tagline}. ${status}`}
-      className="group relative isolate flex min-h-52 animate-rise flex-col justify-between overflow-hidden rounded-[1.75rem] p-5 ring-1 ring-line transition-[transform,box-shadow] duration-300 ease-[var(--ease-out-soft)] hover:-translate-y-1 hover:shadow-[0_24px_60px_-24px_rgb(255_79_154/0.45)] hover:ring-white/20 active:scale-[0.985] sm:min-h-64 sm:p-7"
+      className="group relative isolate flex min-h-52 animate-rise flex-col justify-between overflow-hidden rounded-3xl bg-surface p-6 ring-1 ring-line transition-[transform,box-shadow] duration-300 ease-[var(--ease-out-soft)] hover:-translate-y-1 hover:shadow-[0_24px_60px_-24px_rgb(255_79_154/0.45)] hover:ring-white/20 active:scale-[0.985] sm:min-h-64 sm:p-8"
       style={{ animationDelay: `${index * 70}ms` }}
     >
       <Artwork
@@ -40,24 +40,26 @@ export function GameTile({ game, artworkSetId, glyph, result, inProgress, index 
         <span className="grid size-12 place-items-center rounded-2xl bg-black/45 text-2xl text-fg ring-1 ring-white/15 backdrop-blur-md">
           {glyph}
         </span>
-        <span
-          className={`tabular inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-sm font-semibold backdrop-blur-md ${
-            done ? 'bg-white/90 text-ink' : 'bg-black/45 text-fg ring-1 ring-white/15'
-          }`}
-        >
-          {done && <Check />}
-          {status}
-        </span>
+        {(done || inProgress) && (
+          <span
+            className={`tabular inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold backdrop-blur-md ${
+              done ? 'bg-white/90 text-ink' : 'bg-black/45 text-fg ring-1 ring-white/15'
+            }`}
+          >
+            {done && <Check />}
+            {status}
+          </span>
+        )}
       </div>
 
       <div className="flex items-end justify-between gap-4">
         <div>
-          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">{game.name}</h2>
+          <h2 className="text-3xl font-bold tracking-tight">{game.name}</h2>
           <p className="mt-1 text-base text-white/75">{game.tagline}</p>
         </div>
         <span
           aria-hidden="true"
-          className={`grid size-14 shrink-0 place-items-center rounded-full text-2xl transition-transform duration-300 group-hover:translate-x-1 ${
+          className={`grid size-12 shrink-0 place-items-center rounded-full text-2xl transition-transform duration-300 group-hover:translate-x-1 ${
             done ? 'bg-white/15 text-fg' : 'bg-pink text-pink-ink'
           }`}
         >

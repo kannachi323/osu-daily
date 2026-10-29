@@ -1,8 +1,8 @@
 @import 'tailwindcss';
-@import '@fontsource-variable/outfit';
+@import '@fontsource-variable/inter/opsz.css';
 
 @theme {
-  --font-sans: 'Outfit Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
 
   --color-ink: #0b0a0f;
   --color-surface: #15131b;
@@ -60,7 +60,7 @@
     min-height: 100dvh;
     background: var(--color-ink);
     font-family: var(--font-sans);
-    font-feature-settings: 'ss01';
+    font-optical-sizing: auto;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }

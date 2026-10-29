@@ -9,7 +9,7 @@ const VARIANTS: Record<Variant, string> = {
 
 export const buttonClass = (variant: Variant = 'primary', extra = '') =>
   [
-    'inline-flex min-h-14 select-none items-center justify-center gap-2.5 rounded-2xl px-6 text-lg font-semibold',
+    'inline-flex min-h-14 select-none items-center justify-center gap-2 rounded-2xl px-6 text-lg font-semibold',
     'transition-[transform,background-color,box-shadow] duration-150 ease-out active:scale-[0.97]',
     'disabled:pointer-events-none disabled:opacity-40',
     VARIANTS[variant],

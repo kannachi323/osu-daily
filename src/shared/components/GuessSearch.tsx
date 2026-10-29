@@ -80,14 +80,14 @@ export function GuessSearch<T>(props: GuessSearchProps<T>) {
           onFocus={() => setOpen(true)}
           onBlur={() => setOpen(false)}
           onKeyDown={handleKey}
-          className="h-16 w-full rounded-2xl bg-surface pl-14 pr-5 text-lg text-fg ring-1 ring-line outline-none transition-shadow placeholder:text-muted/80 focus:ring-2 focus:ring-pink"
+          className="h-16 w-full rounded-2xl bg-surface pl-14 pr-4 text-lg text-fg ring-1 ring-line outline-none transition-shadow placeholder:text-muted/80 focus:ring-2 focus:ring-pink"
         />
         <ul
           id={listId}
           role="listbox"
           aria-label="Matches"
           hidden={!showList}
-          className="absolute inset-x-0 top-full z-30 mt-2 max-h-[22rem] overflow-y-auto rounded-2xl bg-raised p-1.5 shadow-2xl shadow-black/60 ring-1 ring-line"
+          className="absolute inset-x-0 top-full z-30 mt-2 max-h-[22rem] overflow-y-auto rounded-2xl bg-raised p-2 shadow-2xl shadow-black/60 ring-1 ring-line"
         >
           {results.map((item, index) => {
             const isGuessed = guessed.includes(getId(item))
@@ -105,7 +105,7 @@ export function GuessSearch<T>(props: GuessSearchProps<T>) {
                 }}
                 onMouseMove={() => setActive(index)}
                 className={[
-                  'flex cursor-pointer items-center gap-3 rounded-xl px-3 py-2.5',
+                  'flex cursor-pointer items-center gap-3 rounded-xl px-4 py-3',
                   index === active ? 'bg-white/8' : '',
                   isGuessed ? 'cursor-not-allowed opacity-40 line-through' : '',
                 ].join(' ')}

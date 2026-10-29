@@ -98,11 +98,11 @@ export function TriviaPage({ day, today, isArchive }: GamePageProps) {
           next={isArchive ? { to: '/archive', label: 'Archive' } : nextDestination('trivia', day)}
         />
       ) : (
-        <div key={viewing} className="animate-rise space-y-5">
+        <div key={viewing} className="animate-rise space-y-6">
           {question.subject && (
-            <figure className="relative overflow-hidden rounded-3xl ring-1 ring-line">
+            <figure className="relative overflow-hidden rounded-3xl bg-raised ring-1 ring-line">
               <Artwork setId={question.subject.setId} eager className="aspect-[800/280] w-full" />
-              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent px-5 pb-4 pt-12 text-lg font-semibold leading-snug">
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent px-4 pb-4 pt-12 text-lg font-semibold leading-snug sm:px-6">
                 {question.subject.label}
               </figcaption>
             </figure>
@@ -110,14 +110,14 @@ export function TriviaPage({ day, today, isArchive }: GamePageProps) {
           <h2
             ref={headingRef}
             tabIndex={-1}
-            className="text-[1.75rem] font-bold leading-tight tracking-tight outline-none sm:text-3xl"
+            className="text-2xl font-semibold leading-tight tracking-tight outline-none sm:text-3xl"
           >
             <span className="sr-only">
               Question {viewing + 1} of {QUESTION_COUNT}:{' '}
             </span>
             {question.prompt}
           </h2>
-          <div className="grid gap-2.5" role="group" aria-label="Answers">
+          <div className="grid gap-3" role="group" aria-label="Answers">
             {question.choices.map((choice, index) => (
               <ChoiceButton
                 key={choice.label}

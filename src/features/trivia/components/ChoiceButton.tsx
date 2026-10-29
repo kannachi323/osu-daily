@@ -27,21 +27,21 @@ export function ChoiceButton({ choice, index, state, answered, onPick }: ChoiceB
       type="button"
       onClick={onPick}
       aria-disabled={answered}
-      className={`group flex min-h-16 w-full items-center gap-3 rounded-2xl p-2.5 pr-4 text-left ring-1 transition-[transform,background-color,opacity] duration-200 ${STATE_STYLES[state]} ${answered ? 'cursor-default' : 'active:scale-[0.98]'}`}
+      className={`group flex min-h-16 w-full items-center gap-4 rounded-2xl p-2 pr-4 text-left ring-1 transition-[transform,background-color,opacity] duration-200 ${STATE_STYLES[state]} ${answered ? 'cursor-default' : 'active:scale-[0.98]'}`}
     >
       {choice.setId ? (
         <Artwork setId={choice.setId} size="list@2x" className="size-12 shrink-0 rounded-xl" />
       ) : (
         <span
           aria-hidden="true"
-          className={`tabular grid size-12 shrink-0 place-items-center rounded-xl text-lg font-bold ${state === 'idle' || state === 'dimmed' ? 'bg-white/6 text-muted' : 'bg-black/15'}`}
+          className={`tabular grid size-12 shrink-0 place-items-center rounded-xl text-lg font-semibold ${state === 'idle' || state === 'dimmed' ? 'bg-white/6 text-muted' : 'bg-black/15'}`}
         >
           {index + 1}
         </span>
       )}
       <span className="min-w-0 flex-1">
-        <span className="block text-[1.05rem] font-semibold leading-snug">{choice.label}</span>
-        {answered && choice.reveal && <span className="mt-0.5 block text-sm font-medium opacity-80">{choice.reveal}</span>}
+        <span className="block text-lg font-medium leading-snug">{choice.label}</span>
+        {answered && choice.reveal && <span className="mt-1 block text-sm font-medium opacity-80">{choice.reveal}</span>}
       </span>
       {icon && <span className="text-2xl">{icon}</span>}
     </button>

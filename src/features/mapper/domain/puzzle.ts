@@ -10,7 +10,7 @@ export const MIN_ANSWER_FOLLOWERS = 300
 
 export type Clue =
   | { kind: 'joined'; label: string; value: string }
-  | { kind: 'country'; label: string; value: string; countryCode: string }
+  | { kind: 'country'; label: string; value: string }
   | { kind: 'followers'; label: string; value: string }
   | { kind: 'artwork'; label: string; setId: number }
   | { kind: 'song'; label: string; value: string }
@@ -33,7 +33,7 @@ export function answerPool(data: Dataset): Mapper[] {
 export function mapperClues(mapper: Mapper, featuredSet: Beatmapset, snapshotDate: string): Clue[] {
   return [
     { kind: 'joined', label: 'Joined osu!', value: String(mapper.joinedYear) },
-    { kind: 'country', label: 'From', value: mapper.countryName, countryCode: mapper.countryCode },
+    { kind: 'country', label: 'From', value: mapper.countryName },
     {
       kind: 'followers',
       label: `Mapping subscribers (${snapshotDate.slice(0, 7)})`,
